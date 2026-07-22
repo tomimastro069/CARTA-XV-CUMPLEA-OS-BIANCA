@@ -141,7 +141,7 @@ export default function InvitationCard() {
             className="text-xs uppercase tracking-[0.25em]"
             style={{ color: silverFaint, fontFamily: "'Raleway', sans-serif" }}
           >
-            4:30 pm
+            9:00 pm
           </span>
         </div>
 

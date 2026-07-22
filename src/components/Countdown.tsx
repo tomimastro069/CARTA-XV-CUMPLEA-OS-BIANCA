@@ -7,10 +7,10 @@ function calc() {
   const diff = TARGET - Date.now()
   if (diff <= 0) return { days: 0, hours: 0, minutes: 0 }
   const totalMinutes = Math.floor(diff / 60000)
-  const totalHours   = Math.floor(totalMinutes / 60)
+  const totalHours = Math.floor(totalMinutes / 60)
   return {
-    days:    Math.floor(totalHours / 24),
-    hours:   totalHours % 24,
+    days: Math.floor(totalHours / 24),
+    hours: totalHours % 24,
     minutes: totalMinutes % 60,
   }
 }
@@ -25,13 +25,13 @@ export default function Countdown() {
   }, [])
 
   const units = [
-    { label: 'Días',  value: time.days },
+    { label: 'Días', value: time.days },
     { label: 'Horas', value: time.hours },
-    { label: 'Min',   value: time.minutes },
+    { label: 'Min', value: time.minutes },
   ]
 
   return (
-    <section className="py-20 px-6" style={{ background: 'rgba(6,9,30,0.35)' }}>
+    <section className="py-20 px-6" style={{ background: 'rgba(6,9,30,0.55)' }}>
       <div className="max-w-2xl mx-auto text-center">
         <p
           className="text-xs uppercase tracking-[0.3em] mb-3"
@@ -58,17 +58,17 @@ export default function Countdown() {
                   background: 'rgba(201,168,76,0.05)',
                 }}
               >
-                {(['top-left','top-right','bottom-left','bottom-right'] as const).map(c => (
+                {(['top-left', 'top-right', 'bottom-left', 'bottom-right'] as const).map(c => (
                   <span
                     key={c}
                     className="absolute w-1 h-1 rounded-full"
                     style={{
                       background: '#c9a84c',
                       opacity: 0.6,
-                      top:    c.includes('top')    ? -2 : 'auto',
+                      top: c.includes('top') ? -2 : 'auto',
                       bottom: c.includes('bottom') ? -2 : 'auto',
-                      left:   c.includes('left')   ? -2 : 'auto',
-                      right:  c.includes('right')  ? -2 : 'auto',
+                      left: c.includes('left') ? -2 : 'auto',
+                      right: c.includes('right') ? -2 : 'auto',
                     }}
                   />
                 ))}
