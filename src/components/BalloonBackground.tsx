@@ -1,0 +1,27 @@
+import balloonsBg from '../imports/images.jpg'
+
+export default function BalloonBackground() {
+  return (
+    <div
+      className="fixed inset-0 pointer-events-none"
+      style={{ zIndex: 0 }}
+      aria-hidden="true"
+    >
+      {/* Real balloon photo */}
+      <img
+        src={balloonsBg}
+        alt=""
+        className="w-full h-full object-cover"
+        style={{ opacity: 0.32 }}
+      />
+      {/* Dark overlay so text stays readable */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            'linear-gradient(180deg, rgba(6,9,30,0.55) 0%, rgba(6,9,30,0.45) 40%, rgba(6,9,30,0.65) 100%)',
+        }}
+      />
+    </div>
+  )
+}
