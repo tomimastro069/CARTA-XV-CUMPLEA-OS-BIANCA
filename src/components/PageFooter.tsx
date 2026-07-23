@@ -3,7 +3,7 @@ export default function PageFooter() {
     <footer
       className="py-14 px-6 text-center"
       style={{
-        background: 'rgba(4,9,25,0.95)',
+        background: 'rgba(0,102,145,0.95)',
         borderTop: '1px solid rgba(201,168,76,0.1)',
       }}
     >
@@ -17,7 +17,7 @@ export default function PageFooter() {
         }}
       >
         <span style={{ fontFamily: "'Great Vibes', cursive", fontSize: '1.6rem', color: '#c9a84c' }}>
-          S
+          B
         </span>
       </div>
 
@@ -25,14 +25,14 @@ export default function PageFooter() {
         style={{
           fontFamily: "'Great Vibes', cursive",
           fontSize: '1.6rem',
-          color: '#c0cbd8',
+          color: '#CDFFFF',
         }}
       >
         Bianca Mastropietro
       </p>
       <p
         className="mt-1 text-xs uppercase tracking-[0.25em]"
-        style={{ color: 'rgba(192,203,216,0.3)', fontFamily: "'Raleway', sans-serif" }}
+        style={{ color: 'rgba(205,255,255,0.7)', fontFamily: "'Raleway', sans-serif" }}
       >
         XV Años · 09 · 10 · 2026
       </p>
@@ -48,7 +48,7 @@ export default function PageFooter() {
 
       <p
         className="mt-6 text-xs"
-        style={{ color: 'rgba(192,203,216,0.2)', fontFamily: "'Raleway', sans-serif" }}
+        style={{ color: 'rgba(205,255,255,0.5)', fontFamily: "'Raleway', sans-serif" }}
       >
         Hecho con amor para este día especial
       </p>

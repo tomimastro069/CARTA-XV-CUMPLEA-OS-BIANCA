@@ -39,7 +39,7 @@ const extraPhotos = [
 
 export default function VenueGallery() {
   return (
-    <section className="relative py-20 px-6" style={{ background: 'rgba(6,12,32,0.92)', zIndex: 1 }}>
+    <section className="relative py-20 px-6" style={{ background: 'rgba(0,102,145,0.92)', zIndex: 1 }}>
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -65,7 +65,7 @@ export default function VenueGallery() {
                 alt={photo.alt}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, transparent 45%, rgba(6,12,32,0.75) 100%)' }} />
+              <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, transparent 45%, rgba(0,102,145,0.75) 100%)' }} />
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: 'rgba(201,168,76,0.07)' }} />
               <div className="absolute bottom-3 left-4">
                 <span className="text-xs uppercase tracking-[0.2em]" style={{ color: '#c9a84c', fontFamily: "'Raleway', sans-serif" }}>
@@ -89,7 +89,7 @@ export default function VenueGallery() {
                 alt={photo.alt}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, transparent 40%, rgba(6,12,32,0.8) 100%)' }} />
+              <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, transparent 40%, rgba(0,102,145,0.8) 100%)' }} />
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: 'rgba(201,168,76,0.07)' }} />
               <div className="absolute bottom-3 left-3">
                 <span className="text-xs uppercase tracking-[0.2em]" style={{ color: '#c9a84c', fontFamily: "'Raleway', sans-serif" }}>

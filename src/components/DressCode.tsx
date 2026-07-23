@@ -1,14 +1,15 @@
 const palette = [
-  { color: '#1a2f6e', name: 'Azul marino', hex: '#1a2f6e' },
+  { color: '#40CFFF', name: 'Celeste', hex: '#40CFFF' },
   { color: '#c9a84c', name: 'Dorado', hex: '#c9a84c' },
   { color: '#c0c8d4', name: 'Plateado', hex: '#c0c8d4' },
   { color: '#f0eae0', name: 'Champán', hex: '#f0eae0' },
   { color: '#1a1a2e', name: 'Negro noche', hex: '#1a1a2e' },
 ]
 
+
 export default function DressCode() {
   return (
-    <section className="py-20 px-6" style={{ background: 'rgba(6,9,30,0.91)' }}>
+    <section className="py-20 px-6" style={{ background: 'rgba(0,102,145,0.91)' }}>
       <div className="max-w-2xl mx-auto text-center">
         {/* Header */}
         <p
@@ -87,8 +88,7 @@ export default function DressCode() {
             fontWeight: 300,
           }}
         >
-          ✦ Por favor evitar el <strong style={{ color: 'rgba(216,226,236,0.8)' }}>blanco</strong> y el{' '}
-          <strong style={{ color: 'rgba(216,226,236,0.8)' }}>Celeste / Turquesa</strong>, reservados para la quinceañera
+          ✦ Por favor evitar el <strong style={{ color: 'rgba(216,226,236,0.8)' }}>blanco</strong>, reservado para la quinceañera
         </div>
       </div>
     </section>

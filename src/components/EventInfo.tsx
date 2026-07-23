@@ -12,7 +12,7 @@ export default function EventInfo() {
     <section
       className="py-20 px-6"
       style={{
-        background: 'linear-gradient(180deg, rgba(6,9,30,0.9) 0%, rgba(10,18,48,0.9) 60%, rgba(6,9,30,0.9) 100%)',
+        background: 'linear-gradient(180deg, rgba(0,102,145,0.9) 0%, rgba(36,153,199,0.9) 60%, rgba(0,102,145,0.9) 100%)',
       }}
     >
       <div className="max-w-3xl mx-auto">
@@ -79,7 +79,7 @@ export default function EventInfo() {
                       </p>
                       <p
                         className="text-sm"
-                        style={{ color: '#d8e2ec', fontFamily: "'Raleway', sans-serif", fontWeight: 400 }}
+                        style={{ color: '#CDFFFF', fontFamily: "'Raleway', sans-serif", fontWeight: 400 }}
                       >
                         {item.event}
                       </p>
@@ -90,7 +90,7 @@ export default function EventInfo() {
                   <div
                     className="hidden sm:flex items-center justify-center flex-shrink-0 w-8 h-8 rounded-full z-10"
                     style={{
-                      background: '#060c20',
+                      background: '#006691',
                       border: '1px solid rgba(201,168,76,0.4)',
                     }}
                   >
@@ -100,7 +100,7 @@ export default function EventInfo() {
                   {/* Mobile icon */}
                   <div
                     className="sm:hidden flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full"
-                    style={{ border: '1px solid rgba(201,168,76,0.3)', background: '#060c20' }}
+                    style={{ border: '1px solid rgba(201,168,76,0.3)', background: '#006691' }}
                   >
                     <span style={{ fontSize: '0.9rem' }}>{item.icon}</span>
                   </div>

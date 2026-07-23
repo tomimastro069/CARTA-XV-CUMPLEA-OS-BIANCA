@@ -9,8 +9,8 @@ const WHATSAPP_MESSAGE = encodeURIComponent(
 
 const gold = '#c9a84c'
 const goldLight = '#e4c96a'
-const silver = '#d8e2ec'
-const silverFaint = 'rgba(216,226,236,0.7)'
+const silver = '#CDFFFF'
+const silverFaint = 'rgba(205,255,255,0.75)'
 
 export default function InvitationCard() {
   const [confirmed, setConfirmed] = useState(false)

@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div
       className="min-h-screen relative"
-      style={{ background: '#06091e', fontFamily: "'Raleway', sans-serif" }}
+      style={{ background: '#006691', fontFamily: "'Raleway', sans-serif" }}
     >
       {/* Fixed real balloon photo background */}
       <BalloonBackground />
@@ -23,7 +23,7 @@ export default function App() {
         {/* 2 — Invitation card */}
         <section
           className="flex items-center justify-center py-14 px-4"
-          style={{ background: 'rgba(6,9,30,0.55)' }}
+          style={{ background: 'rgba(0, 102, 145, 0.55)' }}
         >
           <InvitationCard />
         </section>

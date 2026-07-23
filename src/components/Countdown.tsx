@@ -31,7 +31,7 @@ export default function Countdown() {
   ]
 
   return (
-    <section className="py-20 px-6" style={{ background: 'rgba(6,9,30,0.55)' }}>
+    <section className="py-20 px-6" style={{ background: 'rgba(0,102,145,0.55)' }}>
       <div className="max-w-2xl mx-auto text-center">
         <p
           className="text-xs uppercase tracking-[0.3em] mb-3"
@@ -76,7 +76,7 @@ export default function Countdown() {
                   style={{
                     fontFamily: "'Playfair Display', serif",
                     fontSize: 'clamp(1.8rem, 6vw, 2.6rem)',
-                    color: '#d8e2ec',
+                    color: '#CDFFFF',
                     lineHeight: 1,
                   }}
                 >

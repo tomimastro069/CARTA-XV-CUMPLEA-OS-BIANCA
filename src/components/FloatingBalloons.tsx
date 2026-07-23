@@ -16,7 +16,7 @@ const BALLOON_COLORS: Array<{ fill: string; shimmer: string }> = [
   { fill: '#d4af37', shimmer: '#f5e070' },   // gold 2
   { fill: '#b8b8c8', shimmer: '#e0e4ec' },   // silver
   { fill: '#c8ccd8', shimmer: '#eaecf4' },   // silver 2
-  { fill: '#1a3a8a', shimmer: '#2a5ad4' },   // royal blue
+  { fill: '#40CFFF', shimmer: '#CDFFFF' },   // celeste
   { fill: '#7c6fcd', shimmer: '#a99ee8' },   // lavender
 ]
 

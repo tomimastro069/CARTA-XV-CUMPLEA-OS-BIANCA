@@ -19,7 +19,7 @@ export default function BalloonBackground() {
         className="absolute inset-0"
         style={{
           background:
-            'linear-gradient(180deg, rgba(6,9,30,0.55) 0%, rgba(6,9,30,0.45) 40%, rgba(6,9,30,0.65) 100%)',
+            'linear-gradient(180deg, rgba(0,102,145,0.55) 0%, rgba(36,153,199,0.45) 40%, rgba(0,102,145,0.65) 100%)',
         }}
       />
     </div>

@@ -2,7 +2,7 @@ export default function MarbleBackground() {
   return (
     <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
       {/* Base deep navy */}
-      <div className="absolute inset-0" style={{ background: '#080f2a' }} />
+      <div className="absolute inset-0" style={{ background: '#006691' }} />
 
       {/* SVG marble swirl filter */}
       <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -17,9 +17,9 @@ export default function MarbleBackground() {
             />
             <feColorMatrix
               type="matrix"
-              values="0 0 0 0 0.04
-                      0 0 0 0 0.08
-                      0 0 0 0 0.28
+              values="0 0 0 0 0.14
+                      0 0 0 0 0.60
+                      0 0 0 0 0.78
                       0 0 0 18 -7"
               result="blue"
             />
@@ -33,9 +33,9 @@ export default function MarbleBackground() {
             <feColorMatrix
               in="noise2"
               type="matrix"
-              values="0 0 0 0 0.06
-                      0 0 0 0 0.12
-                      0 0 0 0 0.38
+              values="0 0 0 0 0.58
+                      0 0 0 0 0.91
+                      0 0 0 0 1.00
                       0 0 0 12 -4"
               result="blue2"
             />
@@ -54,7 +54,7 @@ export default function MarbleBackground() {
           left: '20%',
           width: '60%',
           height: '50%',
-          background: 'radial-gradient(ellipse at center, rgba(30,60,140,0.55) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse at center, rgba(205,255,255,0.45) 0%, transparent 70%)',
         }}
       />
 
@@ -62,7 +62,7 @@ export default function MarbleBackground() {
       <div
         className="absolute bottom-0 left-0 right-0 h-1/3"
         style={{
-          background: 'linear-gradient(180deg, transparent, rgba(4,8,22,0.6))',
+          background: 'linear-gradient(180deg, transparent, rgba(0,102,145,0.7))',
         }}
       />
 
