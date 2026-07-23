@@ -20,6 +20,11 @@ export default function App() {
         {/* 1 — Countdown first */}
         <Countdown />
 
+
+        <VenueGallery />
+        <LocationSection />
+        <EventInfo />
+        <DressCode />
         {/* 2 — Invitation card */}
         <section
           className="flex items-center justify-center py-14 px-4"
@@ -27,11 +32,6 @@ export default function App() {
         >
           <InvitationCard />
         </section>
-
-        <VenueGallery />
-        <LocationSection />
-        <EventInfo />
-        <DressCode />
         <PageFooter />
       </div>
     </div>
