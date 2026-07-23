@@ -88,7 +88,7 @@ export default function DressCode() {
             fontWeight: 300,
           }}
         >
-          ✦ Por favor evitar el <strong style={{ color: 'rgba(216,226,236,0.8)' }}>blanco</strong>, reservado para la quinceañera
+          ✦ Por favor evitar el <strong style={{ color: 'rgba(216,226,236,0.8)' }}>Celeste y blanco</strong>, reservado para la quinceañera
         </div>
       </div>
     </section>
