@@ -64,7 +64,7 @@ export default function Countdown() {
                     className="absolute w-1 h-1 rounded-full"
                     style={{
                       background: '#c9a84c',
-                      opacity: 0.6,
+                      opacity: 0.4,
                       top: c.includes('top') ? -2 : 'auto',
                       bottom: c.includes('bottom') ? -2 : 'auto',
                       left: c.includes('left') ? -2 : 'auto',
@@ -85,7 +85,7 @@ export default function Countdown() {
               </div>
               <span
                 className="mt-2 uppercase tracking-[0.2em] text-xs"
-                style={{ color: 'rgba(201,168,76,0.65)', fontFamily: "'Raleway', sans-serif" }}
+                style={{ color: 'rgba(201,168,76,0.4)', fontFamily: "'Raleway', sans-serif" }}
               >
                 {label}
               </span>

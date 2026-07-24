@@ -28,6 +28,7 @@ export default function InvitationCard() {
 
       <button
         onClick={handleRSVP}
+
         disabled={confirmed}
         className="mt-8 flex items-center gap-2.5 px-7 py-3 text-xs uppercase tracking-[0.18em] transition-all duration-300"
         style={{

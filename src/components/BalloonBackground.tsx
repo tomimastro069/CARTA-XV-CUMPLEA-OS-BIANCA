@@ -1,4 +1,4 @@
-import balloonsBg from '../imports/images.jpg'
+import balloonsBg from '../imports/images.png'
 
 export default function BalloonBackground() {
   return (
@@ -19,7 +19,7 @@ export default function BalloonBackground() {
         className="absolute inset-0"
         style={{
           background:
-            'linear-gradient(180deg, rgba(0,58,92,0.65) 0%, rgba(0,94,140,0.5) 40%, rgba(0,58,92,0.7) 100%)',
+            'linear-gradient(180deg, rgba(0,58,92,0.4) 0%, rgba(0,94,140,0.5) 40%, rgba(0,58,92,0.7) 100%)',
         }}
       />
     </div>
