@@ -1,6 +1,6 @@
 const photos = [
   {
-    url: 'https://images.unsplash.com/photo-1780337092608-aad7948d7a60?w=800&h=520&fit=crop&auto=format',
+    url: '',
     alt: 'Salón de eventos elegante con decoración floral y vigas de madera',
     label: 'El Salón',
     className: 'col-span-2 row-span-2',
@@ -12,7 +12,7 @@ const photos = [
     className: 'col-span-1 row-span-1',
   },
   {
-    url: 'https://images.unsplash.com/photo-1748551204321-845c277c1dba?w=400&h=260&fit=crop&auto=format',
+    url: 'https://res.cloudinary.com/dwkdclfwe/image/upload/v1784916507/QUINTA_FERMINA_SALON_FUERA_a88tae.jpg',
     alt: 'Globos y luces festivas para una celebración',
     label: 'Decoración',
     className: 'col-span-1 row-span-1',
@@ -21,7 +21,7 @@ const photos = [
 
 const extraPhotos = [
   {
-    url: 'https://images.unsplash.com/photo-1759519238029-689e99c6d19e?w=540&h=360&fit=crop&auto=format',
+    url: 'https://res.cloudinary.com/dwkdclfwe/image/upload/v1784916651/unnamed_aadug2.webp',
     alt: 'Gran salón de baile con candelabros y sillas elegantes',
     label: 'Salón de baile',
   },
