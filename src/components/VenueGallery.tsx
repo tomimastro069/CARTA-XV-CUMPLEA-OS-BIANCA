@@ -1,6 +1,6 @@
 const photos = [
   {
-    url: '',
+    url: 'https://res.cloudinary.com/dwkdclfwe/image/upload/v1784918981/images_v6rbc5.jpg',
     alt: 'Salón de eventos elegante con decoración floral y vigas de madera',
     label: 'El Salón',
     className: 'col-span-2 row-span-2',
@@ -36,65 +36,154 @@ const extraPhotos = [
     label: 'Centros de mesa',
   },
 ]
-
 export default function VenueGallery() {
   return (
-    <section className="relative py-20 px-6" style={{ background: 'rgba(0, 58, 92, 0.14)', zIndex: 1 }}>
+    <section
+      className="relative py-20 px-6"
+      style={{ background: 'rgba(0, 58, 92, 0.14)', zIndex: 1 }}
+    >
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-xs uppercase tracking-[0.3em] mb-3" style={{ color: '#c9a84c', fontFamily: "'Raleway', sans-serif" }}>
+          <p
+            className="text-xs uppercase tracking-[0.3em] mb-3"
+            style={{
+              color: '#c9a84c',
+              fontFamily: "'Raleway', sans-serif",
+            }}
+          >
             El lugar
           </p>
-          <h2 style={{ fontFamily: "'Great Vibes', cursive", fontSize: 'clamp(2rem, 6vw, 2.8rem)', color: '#e4c96a' }}>
+
+          <h2
+            style={{
+              fontFamily: "'Great Vibes', cursive",
+              fontSize: 'clamp(2rem, 6vw, 2.8rem)',
+              color: '#e4c96a',
+            }}
+          >
             Donde todo sucederá
           </h2>
-          <div className="mx-auto mt-5" style={{ width: 80, height: 1, background: 'linear-gradient(90deg, transparent, #c9a84c, transparent)' }} />
+
+          <div
+            className="mx-auto mt-5"
+            style={{
+              width: 80,
+              height: 1,
+              background:
+                'linear-gradient(90deg, transparent, #c9a84c, transparent)',
+            }}
+          />
         </div>
 
-        {/* Main grid */}
-        <div className="grid grid-cols-2 grid-rows-2 gap-3" style={{ height: 'clamp(300px, 52vw, 520px)' }}>
-          {photos.map((photo) => (
+        {/* FOTO PRINCIPAL */}
+        <div
+          className="relative overflow-hidden group mb-3"
+          style={{
+            aspectRatio: '16 / 8',
+            maxHeight: '320px',
+            border: '1px solid rgba(201,168,76,0.18)',
+            borderRadius: 2,
+          }}
+        >
+          <img
+            src={photos[0].url}
+            alt={photos[0].alt}
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                'linear-gradient(180deg, transparent 45%, rgba(0,58,92,.45) 100%)',
+            }}
+          />
+
+          <div
+            className="absolute bottom-3 left-4 text-xs uppercase tracking-[0.2em]"
+            style={{
+              color: '#c9a84c',
+              fontFamily: "'Raleway', sans-serif",
+            }}
+          >
+            {photos[0].label}
+          </div>
+        </div>
+
+        {/* DOS FOTOS CHICAS */}
+        <div className="grid grid-cols-2 gap-3">
+          {photos.slice(1).map((photo) => (
             <div
               key={photo.url}
-              className={`${photo.className} relative overflow-hidden group`}
-              style={{ borderRadius: 2, border: '1px solid rgba(201,168,76,0.18)' }}
+              className="relative overflow-hidden group"
+              style={{
+                aspectRatio: '4 / 3',
+                border: '1px solid rgba(201,168,76,0.18)',
+                borderRadius: 2,
+              }}
             >
               <img
                 src={photo.url}
                 alt={photo.alt}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, transparent 45%, rgba(0,58,92,0.4) 100%)' }} />
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: 'rgba(201,168,76,0.07)' }} />
-              <div className="absolute bottom-3 left-4">
-                <span className="text-xs uppercase tracking-[0.2em]" style={{ color: '#c9a84c', fontFamily: "'Raleway', sans-serif" }}>
-                  {photo.label}
-                </span>
+
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    'linear-gradient(180deg, transparent 45%, rgba(0,58,92,.45) 100%)',
+                }}
+              />
+
+              <div
+                className="absolute bottom-3 left-3 text-xs uppercase tracking-[0.2em]"
+                style={{
+                  color: '#c9a84c',
+                  fontFamily: "'Raleway', sans-serif",
+                }}
+              >
+                {photo.label}
               </div>
             </div>
           ))}
         </div>
 
-        {/* Secondary row */}
+        {/* FILA INFERIOR */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3">
           {extraPhotos.map((photo) => (
             <div
               key={photo.url}
               className="relative overflow-hidden group"
-              style={{ height: 200, borderRadius: 2, border: '1px solid rgba(201,168,76,0.15)' }}
+              style={{
+                aspectRatio: '4 / 3',
+                border: '1px solid rgba(201,168,76,0.15)',
+                borderRadius: 2,
+              }}
             >
               <img
                 src={photo.url}
                 alt={photo.alt}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, transparent 40%, rgba(0,58,92,0.85) 100%)' }} />
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: 'rgba(201,168,76,0.07)' }} />
-              <div className="absolute bottom-3 left-3">
-                <span className="text-xs uppercase tracking-[0.2em]" style={{ color: '#c9a84c', fontFamily: "'Raleway', sans-serif" }}>
-                  {photo.label}
-                </span>
+
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    'linear-gradient(180deg, transparent 40%, rgba(0,58,92,.85) 100%)',
+                }}
+              />
+
+              <div
+                className="absolute bottom-3 left-3 text-xs uppercase tracking-[0.2em]"
+                style={{
+                  color: '#c9a84c',
+                  fontFamily: "'Raleway', sans-serif",
+                }}
+              >
+                {photo.label}
               </div>
             </div>
           ))}
