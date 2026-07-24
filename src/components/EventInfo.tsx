@@ -1,8 +1,8 @@
 const program = [
   { time: '21:00', event: 'Recepción de invitados', icon: <img src="/copa-de-champan.png" alt="" width={24} height={24} /> },
   { time: '22:00', event: 'Entrada de la quinceañera', icon: <img src="/corona.png" alt="" width={24} height={24} /> },
-  { time: '22:15', event: 'Vals de honor', icon: <img src="/bailando.png" alt="" width={24} height={24} /> },
-  { time: '23:00', event: 'Cena de gala', icon: <img src="/bandeja.png" alt="" width={24} height={24} /> },
+  { time: '22:15', event: 'Cena de gala', icon: <img src="/bandeja.png" alt="" width={24} height={24} /> },
+  { time: '23:00', event: 'Vals de honor', icon: <img src="/bailando.png" alt="" width={24} height={24} /> },
   { time: '00:30', event: 'Baile y celebración', icon: <img src="/notas-musicales.png" alt="" width={24} height={24} /> },
   { time: '05:00', event: 'Cierre de fiesta', icon: <img src="/estrella.png" alt="" width={24} height={24} /> },
 ]
@@ -12,7 +12,8 @@ export default function EventInfo() {
     <section
       className="py-20 px-6"
       style={{
-        background: 'linear-gradient(rgba(0, 58, 92, 0.40) 0%, rgba(0, 94, 140, 0.4) 60%, rgba(0, 140, 200, 0.4) 100%)',
+        background:
+          'linear-gradient(rgba(0, 58, 92, 0.40) 0%, rgba(0, 94, 140, 0.4) 60%, rgba(0, 140, 200, 0.4) 100%)',
       }}
     >
       <div className="max-w-3xl mx-auto">
@@ -20,10 +21,14 @@ export default function EventInfo() {
         <div className="text-center mb-14">
           <p
             className="text-xs uppercase tracking-[0.3em] mb-3"
-            style={{ color: '#c9a84c', fontFamily: "'Raleway', sans-serif" }}
+            style={{
+              color: '#c9a84c',
+              fontFamily: "'Raleway', sans-serif",
+            }}
           >
             Programa
           </p>
+
           <h2
             style={{
               fontFamily: "'Great Vibes', cursive",
@@ -33,34 +38,47 @@ export default function EventInfo() {
           >
             Una noche mágica
           </h2>
+
           <div
             className="mx-auto mt-5"
             style={{
               width: 80,
               height: 1,
-              background: 'linear-gradient(90deg, transparent, #c9a84c, transparent)',
+              background:
+                'linear-gradient(90deg, transparent, #c9a84c, transparent)',
             }}
           />
         </div>
 
         {/* Timeline */}
         <div className="relative">
-          {/* Vertical line */}
+          {/* Línea */}
           <div
-            className="absolute left-1/2 top-0 bottom-0 -translate-x-1/2 hidden sm:block"
-            style={{ width: 1, background: 'linear-gradient(180deg, transparent, rgba(201,168,76,0.3), transparent)' }}
+            className="absolute left-4 sm:left-1/2 top-0 bottom-0 sm:-translate-x-1/2"
+            style={{
+              width: 2,
+              background:
+                'linear-gradient(180deg, transparent, rgba(201,168,76,0.35), transparent)',
+            }}
           />
 
           <div className="flex flex-col gap-6">
             {program.map((item, i) => {
               const isLeft = i % 2 === 0
+
               return (
                 <div
                   key={item.time}
-                  className={`flex items-center gap-4 sm:gap-0 ${isLeft ? 'sm:flex-row' : 'sm:flex-row-reverse'}`}
+                  className={`relative flex items-center pl-12 sm:pl-0 ${isLeft ? 'sm:flex-row' : 'sm:flex-row-reverse'
+                    }`}
                 >
-                  {/* Content side */}
-                  <div className={`flex-1 ${isLeft ? 'sm:text-right sm:pr-8' : 'sm:text-left sm:pl-8'}`}>
+                  {/* Tarjeta */}
+                  <div
+                    className={`flex-1 ${isLeft
+                      ? 'sm:text-right sm:pr-8'
+                      : 'sm:text-left sm:pl-8'
+                      }`}
+                  >
                     <div
                       className="inline-block rounded-sm px-5 py-4 transition-all duration-300"
                       style={{
@@ -68,44 +86,50 @@ export default function EventInfo() {
                         border: '1px solid rgba(201,168,76,0.15)',
                         minWidth: 160,
                       }}
-                      onMouseEnter={e => ((e.currentTarget as HTMLElement).style.borderColor = 'rgba(201,168,76,0.4)')}
-                      onMouseLeave={e => ((e.currentTarget as HTMLElement).style.borderColor = 'rgba(201,168,76,0.15)')}
+                      onMouseEnter={(e) =>
+                      ((e.currentTarget as HTMLElement).style.borderColor =
+                        'rgba(201,168,76,0.4)')
+                      }
+                      onMouseLeave={(e) =>
+                      ((e.currentTarget as HTMLElement).style.borderColor =
+                        'rgba(201,168,76,0.15)')
+                      }
                     >
                       <p
                         className="text-xs uppercase tracking-[0.2em] mb-1"
-                        style={{ color: '#c9a84c', fontFamily: "'Raleway', sans-serif" }}
+                        style={{
+                          color: '#c9a84c',
+                          fontFamily: "'Raleway', sans-serif",
+                        }}
                       >
                         {item.time}
                       </p>
+
                       <p
                         className="text-sm"
-                        style={{ color: '#E8F8FF', fontFamily: "'Raleway', sans-serif", fontWeight: 400 }}
+                        style={{
+                          color: '#E8F8FF',
+                          fontFamily: "'Raleway', sans-serif",
+                          fontWeight: 400,
+                        }}
                       >
                         {item.event}
                       </p>
                     </div>
                   </div>
 
-                  {/* Center dot */}
+                  {/* Punto + ícono */}
                   <div
-                    className="hidden sm:flex items-center justify-center flex-shrink-0 w-8 h-8 rounded-full z-10"
+                    className="absolute left-4 sm:left-1/2 -translate-x-1/2 flex items-center justify-center w-8 h-8 rounded-full z-10"
                     style={{
                       background: '#005E8C',
                       border: '1px solid rgba(64,207,255,0.5)',
                     }}
                   >
-                    <span style={{ fontSize: '1rem', lineHeight: 1 }}>{item.icon}</span>
+                    {item.icon}
                   </div>
 
-                  {/* Mobile icon */}
-                  <div
-                    className="sm:hidden flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full"
-                    style={{ border: '1px solid rgba(64,207,255,0.4)', background: '#79c1d1ff' }}
-                  >
-                    <span style={{ fontSize: '0.9rem' }}>{item.icon}</span>
-                  </div>
-
-                  {/* Empty opposite side */}
+                  {/* Espacio lado opuesto (solo desktop) */}
                   <div className="flex-1 hidden sm:block" />
                 </div>
               )

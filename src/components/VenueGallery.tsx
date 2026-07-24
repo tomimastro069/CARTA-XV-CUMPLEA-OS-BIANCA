@@ -78,10 +78,12 @@ export default function VenueGallery() {
 
         {/* FOTO PRINCIPAL */}
         <div
-          className="relative overflow-hidden group mb-3"
+          className="relative overflow-hidden group mb-3
+             h-[220px]
+             sm:h-[260px]
+             lg:h-[320px]
+             xl:h-[360px]"
           style={{
-            aspectRatio: '16 / 8',
-            maxHeight: '320px',
             border: '1px solid rgba(201,168,76,0.18)',
             borderRadius: 2,
           }}
