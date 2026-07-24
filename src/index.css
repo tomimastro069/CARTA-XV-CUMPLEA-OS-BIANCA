@@ -2,12 +2,12 @@
 @import 'tailwindcss';
 
 @theme inline {
-  --color-navy: #006691;
-  --color-navy-light: #2499C7;
+  --color-navy: #1B3A6B;
+  --color-navy-light: #5B8FC5;
   --color-gold: #c9a84c;
   --color-gold-light: #e8c96a;
-  --color-silver: #CDFFFF;
-  --color-silver-light: #CDFFFF;
+  --color-silver: #EAF4F8;
+  --color-silver-light: #A8CCEC;
 }
 
 html {
@@ -15,8 +15,8 @@ html {
 }
 
 body {
-  background-color: #006691;
-  color: #CDFFFF;
+  background-color: #1B3A6B;
+  color: #EAF4F8;
 }
 
 * {
@@ -28,7 +28,7 @@ body {
   width: 4px;
 }
 
-::-webkit-scrollbar-thumb {
+a::-webkit-scrollbar-thumb {
   background: #c9a84c;
   border-radius: 2px;
 }

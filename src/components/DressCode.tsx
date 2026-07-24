@@ -1,15 +1,15 @@
 const palette = [
-  { color: '#40CFFF', name: 'Celeste', hex: '#40CFFF' },
+  { color: '#1a1a2e', name: 'Negro', hex: '#1a1a2e' },
   { color: '#c9a84c', name: 'Dorado', hex: '#c9a84c' },
   { color: '#c0c8d4', name: 'Plateado', hex: '#c0c8d4' },
   { color: '#f0eae0', name: 'Champán', hex: '#f0eae0' },
-  { color: '#1a1a2e', name: 'Negro noche', hex: '#1a1a2e' },
+  { color: '#1a2d74ff', name: 'Azul', hex: '#40CFFF' },
 ]
 
 
 export default function DressCode() {
   return (
-    <section className="py-20 px-6" style={{ background: 'rgba(0,102,145,0.91)' }}>
+    <section className="py-20 px-6" style={{ background: 'linear-gradient(rgba(0, 140, 200, 0.6) 0%, rgba(220, 245, 255, 0.6) 100%)' }}>
       <div className="max-w-2xl mx-auto text-center">
         {/* Header */}
         <p
@@ -47,8 +47,8 @@ export default function DressCode() {
 
         {/* Color palette */}
         <p
-          className="text-xs uppercase tracking-[0.25em] mb-6"
-          style={{ color: 'rgba(201,168,76,0.7)', fontFamily: "'Raleway', sans-serif" }}
+          className="text-xs uppercase tracking-[0.40em] mb-7"
+          style={{ color: 'rgba(201, 168, 76, 1)', fontFamily: "'Raleway', sans-serif" }}
         >
           Paleta de colores sugerida
         </p>
@@ -68,7 +68,11 @@ export default function DressCode() {
               />
               <span
                 className="text-xs"
-                style={{ color: 'rgba(216,226,236,0.5)', fontFamily: "'Raleway', sans-serif", fontWeight: 300 }}
+                style={{
+                  color: '#e4c558e3',
+                  fontFamily: "'Raleway', sans-serif",
+                  fontWeight: 300,
+                }}
               >
                 {name}
               </span>
@@ -81,14 +85,15 @@ export default function DressCode() {
           className="mt-10 mx-auto rounded-sm px-6 py-4 text-sm"
           style={{
             maxWidth: 380,
-            border: '1px solid rgba(201,168,76,0.15)',
-            background: 'rgba(201,168,76,0.04)',
-            color: 'rgba(216,226,236,0.5)',
+            border: '1px solid rgba(185, 28, 28, 0.91)',
+            background: 'linear-gradient(135deg, rgba(202, 24, 24, 0.93), rgba(185, 28, 28, 1))',
+            color: '#550f0fff',
             fontFamily: "'Raleway', sans-serif",
-            fontWeight: 300,
+            fontWeight: 500,
+            boxShadow: '0 8px 25px rgba(185, 28, 28, 0.15)',
           }}
         >
-          ✦ Por favor evitar el <strong style={{ color: 'rgba(216,226,236,0.8)' }}>Celeste y blanco</strong>, reservado para la quinceañera
+          ✦ Por favor evitar el <strong style={{ color: 'rgba(22, 2, 2, 0.81)' }}>Celeste y blanco</strong>, reservado para la quinceañera
         </div>
       </div>
     </section>

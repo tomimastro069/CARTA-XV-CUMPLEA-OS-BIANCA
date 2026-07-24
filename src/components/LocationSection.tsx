@@ -2,7 +2,9 @@ export default function LocationSection() {
   return (
     <section
       className="relative py-20 px-6"
-      style={{ background: 'rgba(0,102,145,0.93)', zIndex: 1 }}
+      style={{
+        background: 'linear-gradient(rgba(0, 58, 92, 0.14) 0%, rgba(0, 94, 140, 0.20) 60%, rgba(0, 58, 92, 0.40) 100%)',
+      }}
     >
       <div className="max-w-4xl mx-auto">
         {/* Header */}

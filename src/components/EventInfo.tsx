@@ -1,10 +1,10 @@
 const program = [
-  { time: '9:00 pm', event: 'Recepción de invitados', icon: '🥂' },
-  { time: '10:00 pm', event: 'Entrada de la quinceañera', icon: '👑' },
-  { time: '10:15 pm', event: 'Vals de honor', icon: '💃' },
-  { time: '11:00 pm', event: 'Cena de gala', icon: '🍽️' },
-  { time: '12:30 am', event: 'Baile y celebración', icon: '🎶' },
-  { time: '5:00 am', event: 'Cierre de fiesta', icon: '✨' },
+  { time: '21:00', event: 'Recepción de invitados', icon: '🥂' },
+  { time: '22:00', event: 'Entrada de la quinceañera', icon: '👑' },
+  { time: '22:15', event: 'Vals de honor', icon: '💃' },
+  { time: '23:00', event: 'Cena de gala', icon: '🍽️' },
+  { time: '00:30', event: 'Baile y celebración', icon: '🎶' },
+  { time: '05:00', event: 'Cierre de fiesta', icon: '✨' },
 ]
 
 export default function EventInfo() {
@@ -12,7 +12,7 @@ export default function EventInfo() {
     <section
       className="py-20 px-6"
       style={{
-        background: 'linear-gradient(180deg, rgba(0,102,145,0.9) 0%, rgba(36,153,199,0.9) 60%, rgba(0,102,145,0.9) 100%)',
+        background: 'linear-gradient(rgba(0, 58, 92, 0.40) 0%, rgba(0, 94, 140, 0.60) 60%, rgba(0, 140, 200, 0.6) 100%)',
       }}
     >
       <div className="max-w-3xl mx-auto">
@@ -79,7 +79,7 @@ export default function EventInfo() {
                       </p>
                       <p
                         className="text-sm"
-                        style={{ color: '#CDFFFF', fontFamily: "'Raleway', sans-serif", fontWeight: 400 }}
+                        style={{ color: '#E8F8FF', fontFamily: "'Raleway', sans-serif", fontWeight: 400 }}
                       >
                         {item.event}
                       </p>
@@ -90,8 +90,8 @@ export default function EventInfo() {
                   <div
                     className="hidden sm:flex items-center justify-center flex-shrink-0 w-8 h-8 rounded-full z-10"
                     style={{
-                      background: '#006691',
-                      border: '1px solid rgba(201,168,76,0.4)',
+                      background: '#005E8C',
+                      border: '1px solid rgba(64,207,255,0.5)',
                     }}
                   >
                     <span style={{ fontSize: '1rem', lineHeight: 1 }}>{item.icon}</span>
@@ -100,7 +100,7 @@ export default function EventInfo() {
                   {/* Mobile icon */}
                   <div
                     className="sm:hidden flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full"
-                    style={{ border: '1px solid rgba(201,168,76,0.3)', background: '#006691' }}
+                    style={{ border: '1px solid rgba(64,207,255,0.4)', background: '#005E8C' }}
                   >
                     <span style={{ fontSize: '0.9rem' }}>{item.icon}</span>
                   </div>

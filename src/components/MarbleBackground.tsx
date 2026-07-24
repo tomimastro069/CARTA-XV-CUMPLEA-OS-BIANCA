@@ -2,7 +2,7 @@ export default function MarbleBackground() {
   return (
     <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
       {/* Base deep navy */}
-      <div className="absolute inset-0" style={{ background: '#006691' }} />
+      <div className="absolute inset-0" style={{ background: '#003A5C' }} />
 
       {/* SVG marble swirl filter */}
       <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -17,9 +17,9 @@ export default function MarbleBackground() {
             />
             <feColorMatrix
               type="matrix"
-              values="0 0 0 0 0.14
-                      0 0 0 0 0.60
-                      0 0 0 0 0.78
+              values="0 0 0 0 0.00
+                      0 0 0 0 0.37
+                      0 0 0 0 0.55
                       0 0 0 18 -7"
               result="blue"
             />
@@ -33,8 +33,8 @@ export default function MarbleBackground() {
             <feColorMatrix
               in="noise2"
               type="matrix"
-              values="0 0 0 0 0.58
-                      0 0 0 0 0.91
+              values="0 0 0 0 0.25
+                      0 0 0 0 0.81
                       0 0 0 0 1.00
                       0 0 0 12 -4"
               result="blue2"
@@ -54,7 +54,7 @@ export default function MarbleBackground() {
           left: '20%',
           width: '60%',
           height: '50%',
-          background: 'radial-gradient(ellipse at center, rgba(205,255,255,0.45) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse at center, rgba(64,207,255,0.35) 0%, transparent 70%)',
         }}
       />
 
@@ -62,7 +62,7 @@ export default function MarbleBackground() {
       <div
         className="absolute bottom-0 left-0 right-0 h-1/3"
         style={{
-          background: 'linear-gradient(180deg, transparent, rgba(0,102,145,0.7))',
+          background: 'linear-gradient(180deg, transparent, rgba(0,58,92,0.75))',
         }}
       />
 
