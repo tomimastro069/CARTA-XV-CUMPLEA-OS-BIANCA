@@ -73,22 +73,22 @@ export default function LocationSection() {
             className="flex flex-col justify-between p-7"
             style={{
               border: '1px solid rgba(201,168,76,0.2)',
-              background: 'rgba(255,255,255,0.025)',
+              background: 'rgba(0, 58, 92, 0.12)',
               borderRadius: 2,
             }}
           >
             <div className="space-y-6">
-              <InfoRow icon="📍" label="Dirección">
+              <InfoRow icon={<img src="/ubicacion.png" alt="" width={24} height={24} />} label="Dirección">
                 Quinta Fermina Eventos
                 <br />
                 Mendoza, Argentina
               </InfoRow>
-              <InfoRow icon="🕖" label="Horario">
+              <InfoRow icon={<img src="/reloj-de-pared.png" alt="" width={24} height={24} />} label="Horario">
                 Recepción: 9:00 pm
                 <br />
                 Ceremonia: 10:00 pm
               </InfoRow>
-              <InfoRow icon="📅" label="Fecha">
+              <InfoRow icon={<img src="/calendario.png" alt="" width={24} height={24} />} label="Fecha">
                 Viernes, 9 de Octubre
                 <br />
                 2026

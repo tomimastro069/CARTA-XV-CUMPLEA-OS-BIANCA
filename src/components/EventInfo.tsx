@@ -1,10 +1,10 @@
 const program = [
-  { time: '21:00', event: 'Recepción de invitados', icon: '🥂' },
-  { time: '22:00', event: 'Entrada de la quinceañera', icon: '👑' },
-  { time: '22:15', event: 'Vals de honor', icon: '💃' },
-  { time: '23:00', event: 'Cena de gala', icon: '🍽️' },
-  { time: '00:30', event: 'Baile y celebración', icon: '🎶' },
-  { time: '05:00', event: 'Cierre de fiesta', icon: '✨' },
+  { time: '21:00', event: 'Recepción de invitados', icon: <img src="/copa-de-champan.png" alt="" width={24} height={24} /> },
+  { time: '22:00', event: 'Entrada de la quinceañera', icon: <img src="/corona.png" alt="" width={24} height={24} /> },
+  { time: '22:15', event: 'Vals de honor', icon: <img src="/bailando.png" alt="" width={24} height={24} /> },
+  { time: '23:00', event: 'Cena de gala', icon: <img src="/bandeja.png" alt="" width={24} height={24} /> },
+  { time: '00:30', event: 'Baile y celebración', icon: <img src="/notas-musicales.png" alt="" width={24} height={24} /> },
+  { time: '05:00', event: 'Cierre de fiesta', icon: <img src="/estrella.png" alt="" width={24} height={24} /> },
 ]
 
 export default function EventInfo() {
@@ -100,7 +100,7 @@ export default function EventInfo() {
                   {/* Mobile icon */}
                   <div
                     className="sm:hidden flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full"
-                    style={{ border: '1px solid rgba(64,207,255,0.4)', background: '#005E8C' }}
+                    style={{ border: '1px solid rgba(64,207,255,0.4)', background: '#79c1d1ff' }}
                   >
                     <span style={{ fontSize: '0.9rem' }}>{item.icon}</span>
                   </div>
