@@ -14,7 +14,7 @@ export default function DressCode() {
         {/* Header */}
         <p
           className="text-xs uppercase tracking-[0.3em] mb-3"
-          style={{ color: '#c9a84c', fontFamily: "'Raleway', sans-serif" }}
+          style={{ color: '#6ba6eb', fontFamily: "'Raleway', sans-serif" }}
         >
           Vestimenta
         </p>
@@ -22,7 +22,11 @@ export default function DressCode() {
           style={{
             fontFamily: "'Great Vibes', cursive",
             fontSize: 'clamp(2rem, 6vw, 2.8rem)',
-            color: '#e4c96a',
+            background: 'linear-gradient(90deg, #cdffd8 0%, #94b9ff 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            color: 'transparent',
           }}
         >
           Formal de gala
@@ -32,7 +36,7 @@ export default function DressCode() {
           style={{
             width: 80,
             height: 1,
-            background: 'linear-gradient(90deg, transparent, #c9a84c, transparent)',
+            background: 'linear-gradient(90deg, transparent, #6ba6eb, transparent)',
           }}
         />
 
@@ -48,7 +52,7 @@ export default function DressCode() {
         {/* Color palette */}
         <p
           className="text-xs uppercase tracking-[0.40em] mb-7"
-          style={{ color: 'rgba(201, 168, 76, 1)', fontFamily: "'Raleway', sans-serif" }}
+          style={{ color: '#6ba6eb', fontFamily: "'Raleway', sans-serif" }}
         >
           Paleta de colores sugerida
         </p>
@@ -62,14 +66,14 @@ export default function DressCode() {
                   width: 48,
                   height: 48,
                   background: color,
-                  border: '1px solid rgba(201,168,76,0.25)',
+                  border: '1px solid rgba(107,166,235,0.25)',
                   boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
                 }}
               />
               <span
                 className="text-xs"
                 style={{
-                  color: '#e4c558e3',
+                  color: '#6ba6eb',
                   fontFamily: "'Raleway', sans-serif",
                   fontWeight: 300,
                 }}

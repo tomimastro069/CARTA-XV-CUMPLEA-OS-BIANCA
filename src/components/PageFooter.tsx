@@ -13,11 +13,11 @@ export default function PageFooter() {
         style={{
           width: 52,
           height: 52,
-          border: '1px solid rgba(201,168,76,0.3)',
-          background: 'rgba(201,168,76,0.05)',
+          border: '1px solid rgba(107,166,235,0.3)',
+          background: 'rgba(107,166,235,0.05)',
         }}
       >
-        <span style={{ fontFamily: "'Great Vibes', cursive", fontSize: '1.6rem', color: '#c9a84c' }}>
+        <span style={{ fontFamily: "'Great Vibes', cursive", fontSize: '1.6rem', color: '#6ba6eb' }}>
           B
         </span>
       </div>
@@ -43,7 +43,7 @@ export default function PageFooter() {
         style={{
           width: 60,
           height: 1,
-          background: 'linear-gradient(90deg, transparent, rgba(201,168,76,0.25), transparent)',
+          background: 'linear-gradient(90deg, transparent, rgba(107,166,235,0.25), transparent)',
         }}
       />
 

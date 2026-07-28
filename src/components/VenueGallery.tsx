@@ -48,7 +48,7 @@ export default function VenueGallery() {
           <p
             className="text-xs uppercase tracking-[0.3em] mb-3"
             style={{
-              color: '#c9a84c',
+              color: '#6ba6eb',
               fontFamily: "'Raleway', sans-serif",
             }}
           >
@@ -59,7 +59,11 @@ export default function VenueGallery() {
             style={{
               fontFamily: "'Great Vibes', cursive",
               fontSize: 'clamp(2rem, 6vw, 2.8rem)',
-              color: '#e4c96a',
+              background: 'linear-gradient(90deg, #cdffd8 0%, #94b9ff 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              color: 'transparent',
             }}
           >
             Donde todo sucederá
@@ -71,7 +75,7 @@ export default function VenueGallery() {
               width: 80,
               height: 1,
               background:
-                'linear-gradient(90deg, transparent, #c9a84c, transparent)',
+                'linear-gradient(90deg, transparent, #6ba6eb, transparent)',
             }}
           />
         </div>
@@ -84,7 +88,7 @@ export default function VenueGallery() {
              lg:h-[320px]
              xl:h-[360px]"
           style={{
-            border: '1px solid rgba(201,168,76,0.18)',
+            border: '1px solid rgba(107,166,235,0.18)',
             borderRadius: 2,
           }}
         >
@@ -105,7 +109,7 @@ export default function VenueGallery() {
           <div
             className="absolute bottom-3 left-4 text-xs uppercase tracking-[0.2em]"
             style={{
-              color: '#c9a84c',
+              color: '#6ba6eb',
               fontFamily: "'Raleway', sans-serif",
             }}
           >
@@ -121,7 +125,7 @@ export default function VenueGallery() {
               className="relative overflow-hidden group"
               style={{
                 aspectRatio: '4 / 3',
-                border: '1px solid rgba(201,168,76,0.18)',
+                border: '1px solid rgba(107,166,235,0.18)',
                 borderRadius: 2,
               }}
             >
@@ -142,7 +146,7 @@ export default function VenueGallery() {
               <div
                 className="absolute bottom-3 left-3 text-xs uppercase tracking-[0.2em]"
                 style={{
-                  color: '#c9a84c',
+                  color: '#6ba6eb',
                   fontFamily: "'Raleway', sans-serif",
                 }}
               >
@@ -160,7 +164,7 @@ export default function VenueGallery() {
               className="relative overflow-hidden group"
               style={{
                 aspectRatio: '4 / 3',
-                border: '1px solid rgba(201,168,76,0.15)',
+                border: '1px solid rgba(107,166,235,0.15)',
                 borderRadius: 2,
               }}
             >
@@ -181,7 +185,7 @@ export default function VenueGallery() {
               <div
                 className="absolute bottom-3 left-3 text-xs uppercase tracking-[0.2em]"
                 style={{
-                  color: '#c9a84c',
+                  color: '#6ba6eb',
                   fontFamily: "'Raleway', sans-serif",
                 }}
               >

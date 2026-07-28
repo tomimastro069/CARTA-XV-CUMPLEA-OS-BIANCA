@@ -35,13 +35,21 @@ export default function Countdown() {
       <div className="max-w-2xl mx-auto text-center">
         <p
           className="text-xs uppercase tracking-[0.3em] mb-3"
-          style={{ color: '#c9a84c', fontFamily: "'Raleway', sans-serif" }}
+          style={{ color: '#6ba6eb', fontFamily: "'Raleway', sans-serif" }}
         >
           Faltan
         </p>
         <h2
           className="mb-10"
-          style={{ fontFamily: "'Great Vibes', cursive", fontSize: 'clamp(2rem, 6vw, 2.8rem)', color: '#e4c96a' }}
+          style={{
+            fontFamily: "'Great Vibes', cursive",
+            fontSize: 'clamp(2rem, 6vw, 2.8rem)',
+            background: 'linear-gradient(90deg, #cdffd8 0%, #94b9ff 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            color: 'transparent',
+          }}
         >
           ¡Para el gran día!
         </h2>
@@ -54,8 +62,8 @@ export default function Countdown() {
                 style={{
                   width: 'clamp(72px, 20vw, 96px)',
                   height: 'clamp(72px, 20vw, 96px)',
-                  border: `1px solid ${i === 0 ? 'rgba(167,134,54,0.42)' : 'rgba(201,168,76,0.35)'}`,
-                  background: 'rgba(201,168,76,0.05)',
+                  border: `1px solid ${i === 0 ? 'rgba(107,166,235,0.42)' : 'rgba(107,166,235,0.35)'}`,
+                  background: 'rgba(107,166,235,0.05)',
                 }}
               >
                 {(['top-left', 'top-right', 'bottom-left', 'bottom-right'] as const).map(c => (
@@ -63,7 +71,7 @@ export default function Countdown() {
                     key={c}
                     className="absolute w-1 h-1 rounded-full"
                     style={{
-                      background: '#c9a84c',
+                      background: '#6ba6eb',
                       opacity: 0.4,
                       top: c.includes('top') ? -2 : 'auto',
                       bottom: c.includes('bottom') ? -2 : 'auto',
@@ -85,7 +93,7 @@ export default function Countdown() {
               </div>
               <span
                 className="mt-2 uppercase tracking-[0.2em] text-xs"
-                style={{ color: 'rgba(201,168,76,0.4)', fontFamily: "'Raleway', sans-serif" }}
+                style={{ color: 'rgba(107,166,235,0.6)', fontFamily: "'Raleway', sans-serif" }}
               >
                 {label}
               </span>

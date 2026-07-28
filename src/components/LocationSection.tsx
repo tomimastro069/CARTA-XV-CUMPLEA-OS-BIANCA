@@ -11,7 +11,7 @@ export default function LocationSection() {
         <div className="text-center mb-12">
           <p
             className="text-xs uppercase tracking-[0.3em] mb-3"
-            style={{ color: '#c9a84c', fontFamily: "'Raleway', sans-serif" }}
+            style={{ color: '#6ba6eb', fontFamily: "'Raleway', sans-serif" }}
           >
             Cómo llegar
           </p>
@@ -19,7 +19,11 @@ export default function LocationSection() {
             style={{
               fontFamily: "'Great Vibes', cursive",
               fontSize: 'clamp(2rem, 6vw, 2.8rem)',
-              color: '#e4c96a',
+              background: 'linear-gradient(90deg, #cdffd8 0%, #94b9ff 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              color: 'transparent',
             }}
           >
             Quinta Fermina Eventos
@@ -29,7 +33,7 @@ export default function LocationSection() {
             style={{
               width: 80,
               height: 1,
-              background: 'linear-gradient(90deg, transparent, #c9a84c, transparent)',
+              background: 'linear-gradient(90deg, transparent, #6ba6eb, transparent)',
             }}
           />
           <p
@@ -131,7 +135,7 @@ function InfoRow({ icon, label, children }: { icon: string; label: string; child
       <div>
         <p
           className="text-xs uppercase tracking-[0.2em] mb-1"
-          style={{ color: '#c9a84c', fontFamily: "'Raleway', sans-serif" }}
+          style={{ color: '#6ba6eb', fontFamily: "'Raleway', sans-serif" }}
         >
           {label}
         </p>

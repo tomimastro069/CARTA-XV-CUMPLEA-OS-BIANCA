@@ -3,7 +3,7 @@ interface Props {
   size?: number
 }
 
-export default function Crown({ color = '#c9a84c', size = 52 }: Props) {
+export default function Crown({ color = '#6ba6eb', size = 52 }: Props) {
   const h = size * 0.72
 
   return (

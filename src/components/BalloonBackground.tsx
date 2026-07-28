@@ -11,14 +11,14 @@ export default function BalloonBackground() {
         src={balloonsBg}
         alt=""
         className="w-full h-full object-cover"
-        style={{ opacity: 0.65 }}
+        style={{ opacity: 0.70 }}
       />
       {/* Dark overlay so text stays readable */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            'linear-gradient(180deg, rgba(0,58,92,0.05) 0%, rgba(0,94,140,0.15) 40%, rgba(0,58,92,0.3) 100%)',
+            'linear-gradient(180deg, rgba(0,58,92,0.45) 0%, rgba(0,94,140,0.5) 40%, rgba(0,58,92,0.7) 100%)',
         }}
       />
     </div>

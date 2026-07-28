@@ -1,10 +1,10 @@
 const program = [
-  { time: '21:00', event: 'Recepción de invitados', icon: <img src="/copa-de-champan.png" alt="" width={24} height={24} /> },
-  { time: '22:00', event: 'Entrada de la quinceañera', icon: <img src="/corona.png" alt="" width={24} height={24} /> },
-  { time: '22:15', event: 'Cena de gala', icon: <img src="/bandeja.png" alt="" width={24} height={24} /> },
-  { time: '23:00', event: 'Vals de honor', icon: <img src="/bailando.png" alt="" width={24} height={24} /> },
-  { time: '00:30', event: 'Baile y celebración', icon: <img src="/notas-musicales.png" alt="" width={24} height={24} /> },
-  { time: '05:00', event: 'Cierre de fiesta', icon: <img src="/estrella.png" alt="" width={24} height={24} /> },
+  { time: '21:00', event: 'Recepción de invitados', icon: <img src="/copa-de-champan.png" alt="" width={18} height={18} /> },
+  { time: '22:00', event: 'Entrada de la quinceañera', icon: <img src="/corona.png" alt="" width={18} height={18} /> },
+  { time: '22:15', event: 'Cena de gala', icon: <img src="/bandeja.png" alt="" width={18} height={18} /> },
+  { time: '23:00', event: 'Vals de honor', icon: <img src="/bailando.png" alt="" width={18} height={18} /> },
+  { time: '00:30', event: 'Baile y celebración', icon: <img src="/notas-musicales.png" alt="" width={18} height={18} /> },
+  { time: '05:00', event: 'Cierre de fiesta', icon: <img src="/estrella.png" alt="" width={18} height={18} /> },
 ]
 
 export default function EventInfo() {
@@ -22,7 +22,7 @@ export default function EventInfo() {
           <p
             className="text-xs uppercase tracking-[0.3em] mb-3"
             style={{
-              color: '#c9a84c',
+              color: '#6ba6eb',
               fontFamily: "'Raleway', sans-serif",
             }}
           >
@@ -33,7 +33,11 @@ export default function EventInfo() {
             style={{
               fontFamily: "'Great Vibes', cursive",
               fontSize: 'clamp(2rem, 6vw, 2.8rem)',
-              color: '#e4c96a',
+              background: 'linear-gradient(90deg, #cdffd8 0%, #94b9ff 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              color: 'transparent',
             }}
           >
             Una noche mágica
@@ -45,7 +49,7 @@ export default function EventInfo() {
               width: 80,
               height: 1,
               background:
-                'linear-gradient(90deg, transparent, #c9a84c, transparent)',
+                'linear-gradient(90deg, transparent, #6ba6eb, transparent)',
             }}
           />
         </div>
@@ -83,22 +87,22 @@ export default function EventInfo() {
                       className="inline-block rounded-sm px-5 py-4 transition-all duration-300"
                       style={{
                         background: 'rgba(255,255,255,0.03)',
-                        border: '1px solid rgba(201,168,76,0.15)',
+                        border: '1px solid rgba(107,166,235,0.15)',
                         minWidth: 160,
                       }}
                       onMouseEnter={(e) =>
                       ((e.currentTarget as HTMLElement).style.borderColor =
-                        'rgba(201,168,76,0.4)')
+                        'rgba(107,166,235,0.4)')
                       }
                       onMouseLeave={(e) =>
                       ((e.currentTarget as HTMLElement).style.borderColor =
-                        'rgba(201,168,76,0.15)')
+                        'rgba(107,166,235,0.15)')
                       }
                     >
                       <p
                         className="text-xs uppercase tracking-[0.2em] mb-1"
                         style={{
-                          color: '#c9a84c',
+                          color: '#6ba6eb',
                           fontFamily: "'Raleway', sans-serif",
                         }}
                       >
@@ -122,8 +126,8 @@ export default function EventInfo() {
                   <div
                     className="absolute left-4 sm:left-1/2 -translate-x-1/2 flex items-center justify-center w-8 h-8 rounded-full z-10"
                     style={{
-                      background: '#005E8C',
-                      border: '1px solid rgba(64,207,255,0.5)',
+                      background: '#EAF4F8',
+                      border: '1px solid #6ba6eb',
                     }}
                   >
                     {item.icon}
