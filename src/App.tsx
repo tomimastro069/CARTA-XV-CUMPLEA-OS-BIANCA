@@ -58,7 +58,7 @@ export default function App() {
           className="flex items-center justify-center py-14 px-4"
           style={{
             background:
-              'linear-gradient(180deg, rgba(220, 245, 255, 0.4) 0%, rgba(245, 252, 255, 0.4) 100%)',
+              'linear-gradient(180deg, rgba(220, 245, 255, 0.15) 0%, rgba(245, 252, 255, 0.15) 100%)',
           }}
         >
           <InvitationCard />

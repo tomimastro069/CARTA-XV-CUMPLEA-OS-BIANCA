@@ -9,7 +9,7 @@ const palette = [
 
 export default function DressCode() {
   return (
-    <section className="py-20 px-6" style={{ background: 'linear-gradient(rgba(0, 140, 200, 0.4) 0%, rgba(220, 245, 255, 0.4) 100%)' }}>
+    <section className="py-20 px-6" style={{ background: 'linear-gradient(rgba(0, 140, 200, 0.15) 0%, rgba(220, 245, 255, 0.15) 100%)' }}>
       <div className="max-w-2xl mx-auto text-center">
         {/* Header */}
         <p

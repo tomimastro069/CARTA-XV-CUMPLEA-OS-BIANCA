@@ -40,7 +40,7 @@ export default function VenueGallery() {
   return (
     <section
       className="relative py-20 px-6"
-      style={{ background: 'rgba(0, 58, 92, 0.14)', zIndex: 1 }}
+      style={{ background: 'rgba(0, 58, 92, 0.05)', zIndex: 1 }}
     >
       <div className="max-w-4xl mx-auto">
         {/* Header */}
