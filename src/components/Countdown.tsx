@@ -35,7 +35,7 @@ export default function Countdown() {
       <div className="max-w-2xl mx-auto text-center">
         <p
           className="text-xs uppercase tracking-[0.3em] mb-3"
-          style={{ color: '#6ba6eb', fontFamily: "'Raleway', sans-serif" }}
+          style={{ color: '#a9c1dfff', fontFamily: "'Raleway', sans-serif" }}
         >
           Faltan
         </p>
@@ -93,7 +93,7 @@ export default function Countdown() {
               </div>
               <span
                 className="mt-2 uppercase tracking-[0.2em] text-xs"
-                style={{ color: 'rgba(107,166,235,0.6)', fontFamily: "'Raleway', sans-serif" }}
+                style={{ color: '#a9c1dfff', fontFamily: "'Raleway', sans-serif" }}
               >
                 {label}
               </span>
