@@ -62,8 +62,8 @@ export default function Countdown() {
                 style={{
                   width: 'clamp(72px, 20vw, 96px)',
                   height: 'clamp(72px, 20vw, 96px)',
-                  border: `1px solid ${i === 0 ? 'rgba(107,166,235,0.42)' : 'rgba(107,166,235,0.35)'}`,
-                  background: 'rgba(107,166,235,0.05)',
+                  border: `1px solid ${i === 0 ? 'rgba(104, 173, 243, 0.76)' : 'rgba(104, 173, 243, 0.76)'}`,
+                  background: 'rgba(107, 167, 235, 0.21)',
                 }}
               >
                 {(['top-left', 'top-right', 'bottom-left', 'bottom-right'] as const).map(c => (
@@ -71,7 +71,7 @@ export default function Countdown() {
                     key={c}
                     className="absolute w-1 h-1 rounded-full"
                     style={{
-                      background: '#6ba6eb',
+                      background: '#b8e7ffff',
                       opacity: 0.4,
                       top: c.includes('top') ? -2 : 'auto',
                       bottom: c.includes('bottom') ? -2 : 'auto',
