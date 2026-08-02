@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+﻿import { useEffect, useRef } from 'react'
 
 interface Balloon {
   x: number
@@ -127,3 +127,4 @@ export default function FloatingBalloons() {
     </div>
   )
 }
+

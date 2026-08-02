@@ -3,7 +3,7 @@ export default function LocationSection() {
     <section
       className="relative py-20 px-6"
       style={{
-        background: 'linear-gradient(rgba(0, 58, 92, 0.05) 0%, rgba(0, 94, 140, 0.08) 60%, rgba(0, 58, 92, 0.15) 100%)',
+        background: 'rgba(232, 225, 208, 0.25)',
       }}
     >
       <div className="max-w-4xl mx-auto">
@@ -11,7 +11,7 @@ export default function LocationSection() {
         <div className="text-center mb-12">
           <p
             className="text-xs uppercase tracking-[0.3em] mb-3"
-            style={{ color: '#6ba6eb', fontFamily: "'Raleway', sans-serif" }}
+            style={{ color: '#5b8fd9', fontFamily: "'Raleway', sans-serif" }}
           >
             Cómo llegar
           </p>
@@ -19,7 +19,7 @@ export default function LocationSection() {
             style={{
               fontFamily: "'Great Vibes', cursive",
               fontSize: 'clamp(2rem, 6vw, 2.8rem)',
-              background: 'linear-gradient(90deg, #cdffd8 0%, #94b9ff 100%)',
+              background: 'linear-gradient(90deg, #8fc1f5 0%, #3f6fc0 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
@@ -33,13 +33,13 @@ export default function LocationSection() {
             style={{
               width: 80,
               height: 1,
-              background: 'linear-gradient(90deg, transparent, #6ba6eb, transparent)',
+              background: 'linear-gradient(90deg, transparent, #5b8fd9, transparent)',
             }}
           />
           <p
             className="text-sm"
             style={{
-              color: 'rgba(216,226,236,0.55)',
+              color: 'rgba(27,58,107,0.6)',
               fontFamily: "'Raleway', sans-serif",
               fontWeight: 300,
             }}
@@ -65,7 +65,7 @@ export default function LocationSection() {
               src="https://maps.google.com/maps?q=-32.9987611,-68.8530765&z=16&output=embed"
               width="100%"
               height="100%"
-              style={{ border: 0, filter: 'saturate(0.6) brightness(0.85)' }}
+              style={{ border: 0, filter: 'saturate(0.75)' }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -76,8 +76,8 @@ export default function LocationSection() {
           <div
             className="flex flex-col justify-between p-7"
             style={{
-              border: '1px solid rgba(201,168,76,0.2)',
-              background: 'rgba(0, 58, 92, 0.12)',
+              border: '1px solid rgba(201,168,76,0.35)',
+              background: 'rgba(255, 255, 255, 0.55)',
               borderRadius: 2,
             }}
           >
@@ -135,13 +135,13 @@ function InfoRow({ icon, label, children }: { icon: string; label: string; child
       <div>
         <p
           className="text-xs uppercase tracking-[0.2em] mb-1"
-          style={{ color: '#6ba6eb', fontFamily: "'Raleway', sans-serif" }}
+          style={{ color: '#5b8fd9', fontFamily: "'Raleway', sans-serif" }}
         >
           {label}
         </p>
         <p
           className="text-sm leading-relaxed"
-          style={{ color: 'rgba(216,226,236,0.7)', fontFamily: "'Raleway', sans-serif", fontWeight: 300 }}
+          style={{ color: 'rgba(27,58,107,0.75)', fontFamily: "'Raleway', sans-serif", fontWeight: 300 }}
         >
           {children}
         </p>
@@ -149,3 +149,4 @@ function InfoRow({ icon, label, children }: { icon: string; label: string; child
     </div>
   )
 }
+

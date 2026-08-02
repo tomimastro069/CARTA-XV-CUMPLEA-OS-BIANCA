@@ -1,4 +1,4 @@
-export default function MarbleBackground() {
+﻿export default function MarbleBackground() {
   return (
     <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
       {/* Base deep navy */}
@@ -85,3 +85,4 @@ export default function MarbleBackground() {
     </div>
   )
 }
+

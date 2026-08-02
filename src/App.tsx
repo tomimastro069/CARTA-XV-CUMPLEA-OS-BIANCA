@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
-import BalloonBackground from './components/BalloonBackground'
+import cardArt from './imports/images.png'
+import CardBanner from './components/CardBanner'
 import Countdown from './components/Countdown'
 import InvitationCard from './components/InvitationCard'
 import VenueGallery from './components/VenueGallery'
@@ -27,7 +28,14 @@ export default function App() {
   return (
     <div
       className="min-h-screen relative"
-      style={{ background: '#5d87a0ff', fontFamily: "'Raleway', sans-serif" }}
+      style={{
+        backgroundColor: '#f9f7f2',
+        backgroundImage: `url(${cardArt})`,
+        backgroundRepeat: 'repeat-y',
+        backgroundSize: '100% auto',
+        backgroundPosition: 'top center',
+        fontFamily: "'Raleway', sans-serif",
+      }}
     >
       <audio ref={audioRef} loop>
         <source src="/music.mp3" type="audio/mpeg" />
@@ -45,8 +53,6 @@ export default function App() {
         {playing ? '🔊' : '🎵'}
       </button>
 
-      <BalloonBackground />
-
       <div className="relative" style={{ zIndex: 1 }}>
         <Countdown />
         <VenueGallery />
@@ -54,17 +60,13 @@ export default function App() {
         <EventInfo />
         <DressCode />
 
-        <section
-          className="flex items-center justify-center py-14 px-4"
-          style={{
-            background:
-              'linear-gradient(180deg, rgba(220, 245, 255, 0.15) 0%, rgba(245, 252, 255, 0.15) 100%)',
-          }}
-        >
+        <section className="flex items-center justify-center py-14 px-4" style={{ background: 'transparent' }}>
           <InvitationCard />
         </section>
 
-        <PageFooter />
+        <CardBanner variant="bottom">
+          <PageFooter />
+        </CardBanner>
       </div>
     </div>
   )

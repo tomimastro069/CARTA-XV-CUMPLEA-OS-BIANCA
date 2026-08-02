@@ -31,11 +31,14 @@ export default function Countdown() {
   ]
 
   return (
-    <section className="py-20 px-6" style={{ background: 'rgba(0, 58, 92, 0.05)' }}>
+    <section
+      className="pb-20 px-6"
+      style={{ background: 'transparent', paddingTop: 'clamp(300px, 36vw, 480px)' }}
+    >
       <div className="max-w-2xl mx-auto text-center">
         <p
           className="text-xs uppercase tracking-[0.3em] mb-3"
-          style={{ color: '#a9c1dfff', fontFamily: "'Raleway', sans-serif" }}
+          style={{ color: '#5b8fd9', fontFamily: "'Raleway', sans-serif" }}
         >
           Faltan
         </p>
@@ -44,7 +47,7 @@ export default function Countdown() {
           style={{
             fontFamily: "'Great Vibes', cursive",
             fontSize: 'clamp(2rem, 6vw, 2.8rem)',
-            background: 'linear-gradient(90deg, #cdffd8 0%, #94b9ff 100%)',
+            background: 'linear-gradient(90deg, #8fc1f5 0%, #3f6fc0 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',
@@ -62,8 +65,8 @@ export default function Countdown() {
                 style={{
                   width: 'clamp(72px, 20vw, 96px)',
                   height: 'clamp(72px, 20vw, 96px)',
-                  border: `1px solid ${i === 0 ? 'rgba(104, 173, 243, 0.76)' : 'rgba(104, 173, 243, 0.76)'}`,
-                  background: 'rgba(107, 167, 235, 0.21)',
+                  border: `1px solid ${i === 0 ? 'rgba(91, 143, 217, 0.45)' : 'rgba(91, 143, 217, 0.45)'}`,
+                  background: 'rgba(255, 255, 255, 0.45)',
                 }}
               >
                 {(['top-left', 'top-right', 'bottom-left', 'bottom-right'] as const).map(c => (
@@ -71,7 +74,7 @@ export default function Countdown() {
                     key={c}
                     className="absolute w-1 h-1 rounded-full"
                     style={{
-                      background: '#b8e7ffff',
+                      background: '#5b8fd9',
                       opacity: 0.4,
                       top: c.includes('top') ? -2 : 'auto',
                       bottom: c.includes('bottom') ? -2 : 'auto',
@@ -84,7 +87,7 @@ export default function Countdown() {
                   style={{
                     fontFamily: "'Playfair Display', serif",
                     fontSize: 'clamp(1.8rem, 6vw, 2.6rem)',
-                    color: '#E8F8FF',
+                    color: '#1B3A6B',
                     lineHeight: 1,
                   }}
                 >
@@ -93,7 +96,7 @@ export default function Countdown() {
               </div>
               <span
                 className="mt-2 uppercase tracking-[0.2em] text-xs"
-                style={{ color: '#a9c1dfff', fontFamily: "'Raleway', sans-serif" }}
+                style={{ color: '#5b8fd9', fontFamily: "'Raleway', sans-serif" }}
               >
                 {label}
               </span>
@@ -104,3 +107,4 @@ export default function Countdown() {
     </section>
   )
 }
+

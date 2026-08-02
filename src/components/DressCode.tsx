@@ -9,12 +9,12 @@ const palette = [
 
 export default function DressCode() {
   return (
-    <section className="py-20 px-6" style={{ background: 'linear-gradient(rgba(0, 140, 200, 0.15) 0%, rgba(220, 245, 255, 0.15) 100%)' }}>
+    <section className="py-20 px-6" style={{ background: 'transparent' }}>
       <div className="max-w-2xl mx-auto text-center">
         {/* Header */}
         <p
           className="text-xs uppercase tracking-[0.3em] mb-3"
-          style={{ color: '#6ba6eb', fontFamily: "'Raleway', sans-serif" }}
+          style={{ color: '#5b8fd9', fontFamily: "'Raleway', sans-serif" }}
         >
           Vestimenta
         </p>
@@ -22,7 +22,7 @@ export default function DressCode() {
           style={{
             fontFamily: "'Great Vibes', cursive",
             fontSize: 'clamp(2rem, 6vw, 2.8rem)',
-            background: 'linear-gradient(90deg, #cdffd8 0%, #94b9ff 100%)',
+            background: 'linear-gradient(90deg, #8fc1f5 0%, #3f6fc0 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',
@@ -36,14 +36,14 @@ export default function DressCode() {
           style={{
             width: 80,
             height: 1,
-            background: 'linear-gradient(90deg, transparent, #6ba6eb, transparent)',
+            background: 'linear-gradient(90deg, transparent, #5b8fd9, transparent)',
           }}
         />
 
         {/* Dress code note */}
         <p
           className="mb-10 text-sm leading-relaxed"
-          style={{ color: 'rgba(216,226,236,0.65)', fontFamily: "'Raleway', sans-serif", fontWeight: 300, maxWidth: 400, margin: '0 auto 2.5rem' }}
+          style={{ color: 'rgba(27,58,107,0.7)', fontFamily: "'Raleway', sans-serif", fontWeight: 300, maxWidth: 400, margin: '0 auto 2.5rem' }}
         >
           Te pedimos asistir en vestimenta formal. Para las damas, vestido largo o midi.
           Para los caballeros, traje o smoking.
@@ -52,7 +52,7 @@ export default function DressCode() {
         {/* Color palette */}
         <p
           className="text-xs uppercase tracking-[0.40em] mb-7"
-          style={{ color: '#6ba6eb', fontFamily: "'Raleway', sans-serif" }}
+          style={{ color: '#5b8fd9', fontFamily: "'Raleway', sans-serif" }}
         >
           Paleta de colores sugerida
         </p>
@@ -73,7 +73,7 @@ export default function DressCode() {
               <span
                 className="text-xs"
                 style={{
-                  color: '#6ba6eb',
+                  color: '#5b8fd9',
                   fontFamily: "'Raleway', sans-serif",
                   fontWeight: 300,
                 }}
@@ -103,3 +103,4 @@ export default function DressCode() {
     </section>
   )
 }
+

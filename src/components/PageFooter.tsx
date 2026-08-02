@@ -1,12 +1,6 @@
 export default function PageFooter() {
   return (
-    <footer
-      className="py-14 px-6 text-center"
-      style={{
-        background: 'linear-gradient(180deg, #005f8f 0%, #003a5c 100%)',
-        borderTop: '2px solid #002c45',
-      }}
-    >
+    <footer className="pt-16 pb-24 px-6 text-center" style={{ background: 'transparent' }}>
 
       <div
         className="inline-flex items-center justify-center rounded-full mb-5"
@@ -17,7 +11,7 @@ export default function PageFooter() {
           background: 'rgba(107,166,235,0.05)',
         }}
       >
-        <span style={{ fontFamily: "'Great Vibes', cursive", fontSize: '1.6rem', color: '#6ba6eb' }}>
+        <span style={{ fontFamily: "'Great Vibes', cursive", fontSize: '1.6rem', color: '#3f6fc0' }}>
           B
         </span>
       </div>
@@ -26,14 +20,14 @@ export default function PageFooter() {
         style={{
           fontFamily: "'Great Vibes', cursive",
           fontSize: '1.6rem',
-          color: '#E8F8FF',
+          color: '#3f6fc0',
         }}
       >
         Bianca Mastropietro
       </p>
       <p
         className="mt-1 text-xs uppercase tracking-[0.25em]"
-        style={{ color: 'rgba(148,231,255,0.6)', fontFamily: "'Raleway', sans-serif" }}
+        style={{ color: 'rgba(27,58,107,0.6)', fontFamily: "'Raleway', sans-serif" }}
       >
         XV Años · 09 · 10 · 2026
       </p>
@@ -49,10 +43,11 @@ export default function PageFooter() {
 
       <p
         className="mt-6 text-xs"
-        style={{ color: 'rgba(148,231,255,0.55)', fontFamily: "'Raleway', sans-serif" }}
+        style={{ color: 'rgba(27,58,107,0.55)', fontFamily: "'Raleway', sans-serif" }}
       >
         Hecho con amor para este día especial.                       Todos los derechos reservados ©
       </p>
     </footer>
   )
 }
+

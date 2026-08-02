@@ -1,4 +1,4 @@
-interface Props {
+﻿interface Props {
   color?: string
   size?: number
 }
@@ -31,3 +31,4 @@ export default function Crown({ color = '#6ba6eb', size = 52 }: Props) {
     </svg>
   )
 }
+

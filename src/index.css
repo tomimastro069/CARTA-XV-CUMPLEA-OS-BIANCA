@@ -6,8 +6,8 @@
   --color-navy-light: #5B8FC5;
   --color-gold: #c9a84c;
   --color-gold-light: #e8c96a;
-  --color-silver: #EAF4F8;
-  --color-silver-light: #A8CCEC;
+  --color-cream: #f7f2e6;
+  --color-blue-accent: #5b8fd9;
 }
 
 html {
@@ -15,8 +15,8 @@ html {
 }
 
 body {
-  background-color: #1B3A6B;
-  color: #EAF4F8;
+  background-color: #f9f7f2;
+  color: #1B3A6B;
 }
 
 * {

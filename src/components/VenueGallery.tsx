@@ -40,7 +40,7 @@ export default function VenueGallery() {
   return (
     <section
       className="relative py-20 px-6"
-      style={{ background: 'rgba(0, 58, 92, 0.05)', zIndex: 1 }}
+      style={{ background: 'rgba(232, 225, 208, 0.25)', zIndex: 1 }}
     >
       <div className="max-w-4xl mx-auto">
         {/* Header */}
@@ -48,7 +48,7 @@ export default function VenueGallery() {
           <p
             className="text-xs uppercase tracking-[0.3em] mb-3"
             style={{
-              color: '#6ba6eb',
+              color: '#5b8fd9',
               fontFamily: "'Raleway', sans-serif",
             }}
           >
@@ -59,7 +59,7 @@ export default function VenueGallery() {
             style={{
               fontFamily: "'Great Vibes', cursive",
               fontSize: 'clamp(2rem, 6vw, 2.8rem)',
-              background: 'linear-gradient(90deg, #cdffd8 0%, #94b9ff 100%)',
+              background: 'linear-gradient(90deg, #8fc1f5 0%, #3f6fc0 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
@@ -75,7 +75,7 @@ export default function VenueGallery() {
               width: 80,
               height: 1,
               background:
-                'linear-gradient(90deg, transparent, #6ba6eb, transparent)',
+                'linear-gradient(90deg, transparent, #5b8fd9, transparent)',
             }}
           />
         </div>
@@ -109,7 +109,7 @@ export default function VenueGallery() {
           <div
             className="absolute bottom-3 left-4 text-xs uppercase tracking-[0.2em]"
             style={{
-              color: '#6ba6eb',
+              color: '#5b8fd9',
               fontFamily: "'Raleway', sans-serif",
             }}
           >
@@ -146,7 +146,7 @@ export default function VenueGallery() {
               <div
                 className="absolute bottom-3 left-3 text-xs uppercase tracking-[0.2em]"
                 style={{
-                  color: '#6ba6eb',
+                  color: '#5b8fd9',
                   fontFamily: "'Raleway', sans-serif",
                 }}
               >
@@ -185,7 +185,7 @@ export default function VenueGallery() {
               <div
                 className="absolute bottom-3 left-3 text-xs uppercase tracking-[0.2em]"
                 style={{
-                  color: '#6ba6eb',
+                  color: '#5b8fd9',
                   fontFamily: "'Raleway', sans-serif",
                 }}
               >
@@ -198,3 +198,4 @@ export default function VenueGallery() {
     </section>
   )
 }
+

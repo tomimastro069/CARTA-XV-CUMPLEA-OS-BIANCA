@@ -12,8 +12,7 @@ export default function EventInfo() {
     <section
       className="py-20 px-6"
       style={{
-        background:
-          'linear-gradient(rgba(0, 58, 92, 0.15) 0%, rgba(0, 94, 140, 0.15) 60%, rgba(0, 140, 200, 0.15) 100%)',
+        background: 'transparent',
       }}
     >
       <div className="max-w-3xl mx-auto">
@@ -22,7 +21,7 @@ export default function EventInfo() {
           <p
             className="text-xs uppercase tracking-[0.3em] mb-3"
             style={{
-              color: '#6ba6eb',
+              color: '#5b8fd9',
               fontFamily: "'Raleway', sans-serif",
             }}
           >
@@ -33,7 +32,7 @@ export default function EventInfo() {
             style={{
               fontFamily: "'Great Vibes', cursive",
               fontSize: 'clamp(2rem, 6vw, 2.8rem)',
-              background: 'linear-gradient(90deg, #cdffd8 0%, #94b9ff 100%)',
+              background: 'linear-gradient(90deg, #8fc1f5 0%, #3f6fc0 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
@@ -49,7 +48,7 @@ export default function EventInfo() {
               width: 80,
               height: 1,
               background:
-                'linear-gradient(90deg, transparent, #6ba6eb, transparent)',
+                'linear-gradient(90deg, transparent, #5b8fd9, transparent)',
             }}
           />
         </div>
@@ -86,8 +85,8 @@ export default function EventInfo() {
                     <div
                       className="inline-block rounded-sm px-5 py-4 transition-all duration-300"
                       style={{
-                        background: 'rgba(255,255,255,0.03)',
-                        border: '1px solid rgba(107,166,235,0.15)',
+                        background: 'rgba(255,255,255,0.55)',
+                        border: '1px solid rgba(107,166,235,0.25)',
                         minWidth: 160,
                       }}
                       onMouseEnter={(e) =>
@@ -102,7 +101,7 @@ export default function EventInfo() {
                       <p
                         className="text-xs uppercase tracking-[0.2em] mb-1"
                         style={{
-                          color: '#6ba6eb',
+                          color: '#5b8fd9',
                           fontFamily: "'Raleway', sans-serif",
                         }}
                       >
@@ -112,7 +111,7 @@ export default function EventInfo() {
                       <p
                         className="text-sm"
                         style={{
-                          color: '#E8F8FF',
+                          color: '#1B3A6B',
                           fontFamily: "'Raleway', sans-serif",
                           fontWeight: 400,
                         }}
@@ -126,8 +125,8 @@ export default function EventInfo() {
                   <div
                     className="absolute left-4 sm:left-1/2 -translate-x-1/2 flex items-center justify-center w-8 h-8 rounded-full z-10"
                     style={{
-                      background: '#EAF4F8',
-                      border: '1px solid #6ba6eb',
+                      background: '#f7f2e6',
+                      border: '1px solid #5b8fd9',
                     }}
                   >
                     {item.icon}
