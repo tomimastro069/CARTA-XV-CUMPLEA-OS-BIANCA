@@ -1,9 +1,9 @@
 const palette = [
-  { color: '#1a1a2e', name: 'Negro', hex: '#1a1a2e' },
-  { color: 'rgba(201, 168, 76, 1)', name: 'Dorado', hex: '#c9a84c' },
-  { color: '#c0c8d4', name: 'Plateado', hex: '#c0c8d4' },
-  { color: '#f0eae0', name: 'Champán', hex: '#f0eae0' },
-  { color: '#1a2d74ff', name: 'Azul', hex: '#40CFFF' },
+  { color: '#1a1a2e', name: 'Negro' },
+  { color: '#1B3A6B', name: 'Azul marino' },
+  { color: '#c0c8d4', name: 'Plateado' },
+  { color: '#c9a84c', name: 'Dorado' },
+  { color: '#9b8bc4', name: 'Malva' },
 ]
 
 
@@ -73,9 +73,9 @@ export default function DressCode() {
               <span
                 className="text-xs"
                 style={{
-                  color: '#5b8fd9',
+                  color: '#1B3A6B',
                   fontFamily: "'Raleway', sans-serif",
-                  fontWeight: 300,
+                  fontWeight: 500,
                 }}
               >
                 {name}
