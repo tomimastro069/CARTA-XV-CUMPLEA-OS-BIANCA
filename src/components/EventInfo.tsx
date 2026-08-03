@@ -12,7 +12,7 @@ export default function EventInfo() {
     <section
       className="py-20 px-6"
       style={{
-        background: 'transparent',
+        background: 'rgba(232, 225, 208, 0.25)',
       }}
     >
       <div className="max-w-3xl mx-auto">

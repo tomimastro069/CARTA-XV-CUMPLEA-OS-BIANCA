@@ -1,6 +1,6 @@
 export default function PageFooter() {
   return (
-    <footer className="pt-16 pb-24 px-6 text-center" style={{ background: 'transparent' }}>
+    <footer className="pt-16 pb-24 px-6 text-center" style={{ background: 'rgba(232, 225, 208, 0.25)' }}>
 
       <div
         className="inline-flex items-center justify-center rounded-full mb-5"

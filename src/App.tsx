@@ -57,7 +57,10 @@ export default function App() {
         <EventInfo />
         <DressCode />
 
-        <section className="flex items-center justify-center py-14 px-4" style={{ background: 'transparent' }}>
+        <section
+          className="flex items-center justify-center py-14 px-4"
+          style={{ background: 'rgba(232, 225, 208, 0.25)' }}
+        >
           <InvitationCard />
         </section>
 

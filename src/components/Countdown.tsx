@@ -33,7 +33,7 @@ export default function Countdown() {
   return (
     <section
       className="pb-20 px-6"
-      style={{ background: 'transparent', paddingTop: 'clamp(300px, 36vw, 480px)' }}
+      style={{ background: 'rgba(232, 225, 208, 0.25)', paddingTop: 'clamp(300px, 36vw, 480px)' }}
     >
       <div className="max-w-2xl mx-auto text-center">
         <p

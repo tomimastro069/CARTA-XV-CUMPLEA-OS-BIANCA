@@ -9,7 +9,7 @@ const palette = [
 
 export default function DressCode() {
   return (
-    <section className="py-20 px-6" style={{ background: 'transparent' }}>
+    <section className="py-20 px-6" style={{ background: 'rgba(232, 225, 208, 0.25)' }}>
       <div className="max-w-2xl mx-auto text-center">
         {/* Header */}
         <p
@@ -52,7 +52,7 @@ export default function DressCode() {
         {/* Color palette */}
         <p
           className="text-xs uppercase tracking-[0.40em] mb-7"
-          style={{ color: '#5b8fd9', fontFamily: "'Raleway', sans-serif" }}
+          style={{ color: '#27466eff', fontFamily: "'Raleway', sans-serif" }}
         >
           Paleta de colores sugerida
         </p>
