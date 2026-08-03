@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react'
-import cardArt from './imports/images.png'
-import CardBanner from './components/CardBanner'
+import PageEdges from './components/PageEdges'
 import Countdown from './components/Countdown'
 import InvitationCard from './components/InvitationCard'
 import VenueGallery from './components/VenueGallery'
@@ -30,10 +29,6 @@ export default function App() {
       className="min-h-screen relative"
       style={{
         backgroundColor: '#f9f7f2',
-        backgroundImage: `url(${cardArt})`,
-        backgroundRepeat: 'repeat-y',
-        backgroundSize: '100% auto',
-        backgroundPosition: 'top center',
         fontFamily: "'Raleway', sans-serif",
       }}
     >
@@ -53,6 +48,8 @@ export default function App() {
         {playing ? '🔊' : '🎵'}
       </button>
 
+      <PageEdges />
+
       <div className="relative" style={{ zIndex: 1 }}>
         <Countdown />
         <VenueGallery />
@@ -64,9 +61,7 @@ export default function App() {
           <InvitationCard />
         </section>
 
-        <CardBanner variant="bottom">
-          <PageFooter />
-        </CardBanner>
+        <PageFooter />
       </div>
     </div>
   )
