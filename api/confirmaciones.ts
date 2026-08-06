@@ -1,16 +1,13 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { put, list } from '@vercel/blob'
+import { put, get } from '@vercel/blob'
 
 const BLOB_PATH = 'confirmaciones.json'
 
 async function readList(): Promise<unknown[]> {
   try {
-    const { blobs } = await list({ prefix: BLOB_PATH })
-    const found = blobs.find((b) => b.pathname === BLOB_PATH)
-    if (!found) return []
-    const res = await fetch(found.url, { cache: 'no-store' })
-    if (!res.ok) return []
-    const text = await res.text()
+    const result = await get(BLOB_PATH, { access: 'private' })
+    if (!result || result.statusCode !== 200) return []
+    const text = await new Response(result.stream).text()
     if (!text.trim()) return []
     const parsed = JSON.parse(text)
     return Array.isArray(parsed) ? parsed : []
@@ -32,14 +29,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       const lista = await readList()
       lista.push(entry)
       await put(BLOB_PATH, JSON.stringify(lista, null, 2), {
-        access: 'public',
+        access: 'private',
         contentType: 'application/json',
         addRandomSuffix: false,
         allowOverwrite: true,
       })
       res.status(201).json({ ok: true })
-    } catch (err) {
-      res.status(400).json({ ok: false, error: 'invalid body', debug: err instanceof Error ? err.message : String(err), hasToken: Boolean(process.env.BLOB_READ_WRITE_TOKEN) })
+    } catch {
+      res.status(400).json({ ok: false, error: 'invalid body' })
     }
     return
   }
