@@ -236,6 +236,7 @@ export default function RSVPModal({ onClose, onConfirmed }: RSVPModalProps) {
                   min={1}
                   max={10}
                   value={cantidad}
+                  onFocus={(e) => e.target.select()}
                   onChange={(e) => handleCantidadChange(Number(e.target.value))}
                 />
               </div>
