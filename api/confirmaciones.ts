@@ -38,8 +38,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         allowOverwrite: true,
       })
       res.status(201).json({ ok: true })
-    } catch {
-      res.status(400).json({ ok: false, error: 'invalid body' })
+    } catch (err) {
+      res.status(400).json({ ok: false, error: 'invalid body', debug: err instanceof Error ? err.message : String(err), hasToken: Boolean(process.env.BLOB_READ_WRITE_TOKEN) })
     }
     return
   }
