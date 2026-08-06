@@ -60,13 +60,16 @@ export default function RSVPModal({ onClose, onConfirmed }: RSVPModalProps) {
   const [acompanantes, setAcompanantes] = useState<Acompanante[]>([])
   const [error, setError] = useState('')
 
-  const handleCantidadChange = (value: number) => {
-    const n = Math.min(10, Math.max(1, value))
-    setCantidad(n)
-    setAcompanantes((prev) => {
-      const next = [...prev]
-      while (next.length < n) next.push({ nombre: '', dni: '' })
-      return next.slice(0, n)
+  const handleCantidadChange = (update: number | ((prev: number) => number)) => {
+    setCantidad((prev) => {
+      const raw = typeof update === 'function' ? update(prev) : update
+      const n = Math.min(10, Math.max(1, raw))
+      setAcompanantes((prevAcompanantes) => {
+        const next = [...prevAcompanantes]
+        while (next.length < n) next.push({ nombre: '', dni: '' })
+        return next.slice(0, n)
+      })
+      return n
     })
   }
 
@@ -230,15 +233,57 @@ export default function RSVPModal({ onClose, onConfirmed }: RSVPModalProps) {
             <>
               <div>
                 <label style={labelStyle}>¿Cuántas personas más?</label>
-                <input
-                  style={inputStyle}
-                  type="number"
-                  min={1}
-                  max={10}
-                  value={cantidad}
-                  onFocus={(e) => e.target.select()}
-                  onChange={(e) => handleCantidadChange(Number(e.target.value))}
-                />
+                <div className="flex items-center gap-4 mt-1">
+                  <button
+                    type="button"
+                    onClick={() => handleCantidadChange((prev) => prev - 1)}
+                    disabled={cantidad <= 1}
+                    style={{
+                      width: 40,
+                      height: 40,
+                      fontSize: 18,
+                      fontFamily: "'Raleway', sans-serif",
+                      border: `1px solid ${gold}`,
+                      borderRadius: 2,
+                      background: 'transparent',
+                      color: cantidad <= 1 ? 'rgba(27,58,107,0.3)' : '#1B3A6B',
+                      cursor: cantidad <= 1 ? 'default' : 'pointer',
+                    }}
+                  >
+                    −
+                  </button>
+
+                  <span
+                    style={{
+                      fontFamily: "'Raleway', sans-serif",
+                      fontSize: 18,
+                      color: '#1B3A6B',
+                      minWidth: 24,
+                      textAlign: 'center',
+                    }}
+                  >
+                    {cantidad}
+                  </span>
+
+                  <button
+                    type="button"
+                    onClick={() => handleCantidadChange((prev) => prev + 1)}
+                    disabled={cantidad >= 10}
+                    style={{
+                      width: 40,
+                      height: 40,
+                      fontSize: 18,
+                      fontFamily: "'Raleway', sans-serif",
+                      border: `1px solid ${gold}`,
+                      borderRadius: 2,
+                      background: 'transparent',
+                      color: cantidad >= 10 ? 'rgba(27,58,107,0.3)' : '#1B3A6B',
+                      cursor: cantidad >= 10 ? 'default' : 'pointer',
+                    }}
+                  >
+                    +
+                  </button>
+                </div>
               </div>
 
               <div className="flex flex-col gap-3">
