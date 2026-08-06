@@ -6,6 +6,7 @@ import VenueGallery from './components/VenueGallery'
 import EventInfo from './components/EventInfo'
 import LocationSection from './components/LocationSection'
 import DressCode from './components/DressCode'
+import GuestList from './components/GuestList'
 import PageFooter from './components/PageFooter'
 
 export default function App() {
@@ -63,6 +64,8 @@ export default function App() {
         >
           <InvitationCard />
         </section>
+
+        <GuestList />
 
         <PageFooter />
       </div>

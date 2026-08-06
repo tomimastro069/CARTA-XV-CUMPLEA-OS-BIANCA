@@ -1,18 +1,18 @@
 import { useState } from 'react'
+import RSVPModal from './RSVPModal'
 
 const WHATSAPP_NUMBER = '5492615367418'
-const WHATSAPP_MESSAGE = encodeURIComponent(
-  '¡Hola! confirmo mi asistencia a tu cumple de xv el viernes 9 de octubre. ¡Nos vemos alla!'
-)
 
 const gold = '#c9a84c'
 
 export default function InvitationCard() {
   const [confirmed, setConfirmed] = useState(false)
+  const [showModal, setShowModal] = useState(false)
 
-  const handleRSVP = () => {
+  const handleConfirmed = (mensaje: string) => {
     setConfirmed(true)
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`, '_blank')
+    setShowModal(false)
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensaje)}`, '_blank')
   }
 
   return (
@@ -27,8 +27,7 @@ export default function InvitationCard() {
       />
 
       <button
-        onClick={handleRSVP}
-
+        onClick={() => setShowModal(true)}
         disabled={confirmed}
         className="mt-8 flex items-center gap-2.5 px-7 py-3 text-xs uppercase tracking-[0.18em] transition-all duration-300"
         style={{
@@ -59,6 +58,10 @@ export default function InvitationCard() {
         >
           Abre WhatsApp con mensaje prellenado
         </p>
+      )}
+
+      {showModal && (
+        <RSVPModal onClose={() => setShowModal(false)} onConfirmed={handleConfirmed} />
       )}
     </div>
   )
