@@ -43,3 +43,5 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   res.status(405).send('Method not allowed')
 }
+
+

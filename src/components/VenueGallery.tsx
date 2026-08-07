@@ -6,8 +6,8 @@ const photos = [
     className: 'col-span-2 row-span-2',
   },
   {
-    url: 'https://images.unsplash.com/photo-1775871299393-2cce027efaa9?w=400&h=260&fit=crop&auto=format',
-    alt: 'Quinceañera con vestido azul y tiara',
+    url: '',
+    alt: 'Bianca',
     label: 'La Festejada',
     className: 'col-span-1 row-span-1',
   },
@@ -26,7 +26,7 @@ const extraPhotos = [
     label: 'Salón de baile',
   },
   {
-    url: 'https://images.unsplash.com/photo-1775871299482-3d8ecbc264bc?w=540&h=360&fit=crop&auto=format',
+    url: 'https://res.cloudinary.com/dwkdclfwe/image/upload/v1786059694/dd2bf147-5bf3-4c2a-b721-c3572f34aa16_cyh3rw.jpg',
     alt: 'Quinceañera con ramo de flores en vestido azul',
     label: 'Momento especial',
   },
