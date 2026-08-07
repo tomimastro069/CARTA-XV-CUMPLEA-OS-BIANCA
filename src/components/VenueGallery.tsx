@@ -30,6 +30,7 @@ const extraPhotos = [
     alt: 'Quinceañera con ramo de flores en vestido azul',
     label: 'Momento especial',
     objectPosition: 'top' as const,
+    aspectRatio: '3 / 4',
   },
   {
     url: 'https://res.cloudinary.com/dwkdclfwe/image/upload/v1786072036/WhatsApp_Image_2026-08-06_at_23.40.34_ubctjw.jpg',
@@ -162,9 +163,9 @@ export default function VenueGallery() {
           {extraPhotos.map((photo) => (
             <div
               key={photo.url}
-              className="relative overflow-hidden group"
+              className="relative overflow-hidden group self-start"
               style={{
-                aspectRatio: '4 / 3',
+                aspectRatio: photo.aspectRatio ?? '4 / 3',
                 border: '1px solid rgba(107,166,235,0.15)',
                 borderRadius: 2,
               }}
