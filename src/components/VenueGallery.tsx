@@ -6,7 +6,7 @@ const photos = [
     className: 'col-span-2 row-span-2',
   },
   {
-    url: '',
+    url: 'https://res.cloudinary.com/dwkdclfwe/image/upload/v1786072037/WhatsApp_Image_2026-08-06_at_23.40.28_encepu.jpg',
     alt: 'Bianca',
     label: 'La Festejada',
     className: 'col-span-1 row-span-1',
@@ -26,15 +26,15 @@ const extraPhotos = [
     label: 'Salón de baile',
   },
   {
-    url: 'https://res.cloudinary.com/dwkdclfwe/image/upload/v1786070451/WhatsApp_Image_2026-08-06_at_23.40.03_m4d30j.jpg',
+    url: 'https://res.cloudinary.com/dwkdclfwe/image/upload/v1786072525/WhatsApp_Image_2026-08-07_at_00.14.36_jgk3b4.jpg',
     alt: 'Quinceañera con ramo de flores en vestido azul',
     label: 'Momento especial',
-    objectFit: 'contain' as const,
+    objectPosition: 'top' as const,
   },
   {
-    url: 'https://images.unsplash.com/photo-1530488228536-37ae1dbb20a4?w=540&h=360&fit=crop&auto=format',
+    url: 'https://res.cloudinary.com/dwkdclfwe/image/upload/v1786072036/WhatsApp_Image_2026-08-06_at_23.40.34_ubctjw.jpg',
     alt: 'Centro de mesa floral de lujo',
-    label: 'Centros de mesa',
+    label: 'Momentos especiales',
   },
 ]
 export default function VenueGallery() {
@@ -167,15 +167,13 @@ export default function VenueGallery() {
                 aspectRatio: '4 / 3',
                 border: '1px solid rgba(107,166,235,0.15)',
                 borderRadius: 2,
-                background: photo.objectFit === 'contain' ? '#0f2647' : undefined,
               }}
             >
               <img
                 src={photo.url}
                 alt={photo.alt}
-                className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${
-                  photo.objectFit === 'contain' ? 'object-contain' : 'object-cover'
-                }`}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                style={{ objectPosition: photo.objectPosition ?? 'center' }}
               />
 
               <div
