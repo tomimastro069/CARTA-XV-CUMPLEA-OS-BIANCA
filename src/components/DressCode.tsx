@@ -1,6 +1,6 @@
 const palette = [
   { color: '#1a1a2e', name: 'Negro' },
-  { color: '#1B3A6B', name: 'Azul marino' },
+  { color: '#7b2635', name: 'Bordó' },
   { color: '#c0c8d4', name: 'Plateado' },
   { color: '#c9a84c', name: 'Dorado' },
   { color: '#9b8bc4', name: 'Malva' },
@@ -97,7 +97,7 @@ export default function DressCode() {
             boxShadow: '0 8px 25px rgba(185, 28, 28, 0.15)',
           }}
         >
-          ✦ Por favor evitar el <strong style={{ color: 'rgba(22, 2, 2, 0.88)' }}>Celeste y blanco</strong>, reservado para la quinceañera
+          ✦ Por favor evitar el <strong style={{ color: 'rgba(22, 2, 2, 0.88)' }}>Celeste, Azul y blanco</strong>, reservado para la quinceañera
         </div>
       </div>
     </section>
