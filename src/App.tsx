@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import PageEdges from './components/PageEdges'
 import Countdown from './components/Countdown'
 import InvitationCard from './components/InvitationCard'
@@ -20,10 +20,32 @@ export default function App() {
       audioRef.current.pause()
       setPlaying(false)
     } else {
+      audioRef.current.muted = false
       audioRef.current.play()
       setPlaying(true)
     }
   }
+
+  useEffect(() => {
+    const audio = audioRef.current
+    if (!audio) return
+
+    audio.muted = true
+    audio.play().catch(() => {})
+
+    const unmute = () => {
+      audio.muted = false
+      setPlaying(true)
+      events.forEach((event) => window.removeEventListener(event, unmute))
+    }
+
+    const events = ['click', 'touchstart', 'keydown', 'scroll'] as const
+    events.forEach((event) => window.addEventListener(event, unmute, { once: true }))
+
+    return () => {
+      events.forEach((event) => window.removeEventListener(event, unmute))
+    }
+  }, [])
 
   return (
     <div
@@ -34,7 +56,7 @@ export default function App() {
       }}
     >
       <audio ref={audioRef} loop>
-        <source src="/music.mp3" type="audio/mpeg" />
+        <source src="/is-this-love.mpeg" type="audio/mpeg" />
       </audio>
 
       <button
