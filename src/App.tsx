@@ -56,7 +56,7 @@ export default function App() {
       }}
     >
       <audio ref={audioRef} loop>
-        <source src="/is-this-love.mpeg" type="audio/mpeg" />
+        <source src="/is-this-love.mp3" type="audio/mpeg" />
       </audio>
 
       <button
