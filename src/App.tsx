@@ -35,6 +35,7 @@ export default function App() {
 
     const unmute = () => {
       audio.muted = false
+      audio.play().catch(() => {})
       setPlaying(true)
       events.forEach((event) => window.removeEventListener(event, unmute))
     }
