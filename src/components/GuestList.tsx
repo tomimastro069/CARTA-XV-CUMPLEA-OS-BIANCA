@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 const gold = '#c9a84c'
-const PAGE_SIZE = 20
+const PAGE_SIZE = 10
 
 interface Acompanante {
   nombre: string

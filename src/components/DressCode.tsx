@@ -7,6 +7,7 @@ const palette = [
 ]
 
 
+
 export default function DressCode() {
   return (
     <section className="py-20 px-6" style={{ background: 'rgba(232, 225, 208, 0.25)' }}>
