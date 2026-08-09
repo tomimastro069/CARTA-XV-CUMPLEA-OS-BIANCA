@@ -1,9 +1,9 @@
 const palette = [
   { color: '#1a1a2e', name: 'Negro' },
-  { color: '#b60c83ff', name: 'Rosado' },
+  { color: '#b60c839c', name: 'Rosado' },
   { color: '#c0c8d4', name: 'Plateado' },
   { color: '#c9a84c', name: 'Dorado' },
-  { color: '#9406eaff', name: 'Morado' },
+  { color: '#9306eab4', name: 'Morado' },
 ]
 
 
